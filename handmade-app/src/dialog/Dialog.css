@@ -1,0 +1,23 @@
+.dialog {
+    background-color: antiquewhite;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.backdrop {
+    position: relative;
+
+    border-radius: 5px;
+
+    font-size: 18px;
+}
+.buttonDialog {
+    padding: 10px 20px;
+    background-color: beige;
+    color: blue;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
