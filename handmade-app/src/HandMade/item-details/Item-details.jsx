@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Dialog from "../../dialog/Dialog";
 import ItemForm from "../../item-form/Item-form";
+import "./Item-details.css";
 
 export default function ItemDetails() {
     let { id } = useParams();
@@ -70,52 +71,11 @@ export default function ItemDetails() {
                     </div>
                 </div>
             </article>
-            <button onClick={showDeleteItem}>Delete</button>
 
             <ItemForm onSubmit={onSubmit} item={item}></ItemForm>
-            {/* <form onSubmit={onSubmit}>
-                <fieldset>
-                    <label htmlFor="url">URL:</label>
-                    <input
-                        id="url"
-                        type="text"
-                        name="image"
-                        defaultValue={item?.image}
-                    />
-                </fieldset>
-
-                <fieldset>
-                    <label htmlFor="name">Name</label>
-                    <input
-                        id="name"
-                        type="text"
-                        name="name"
-                        defaultValue={item?.name}
-                    />
-                </fieldset>
-
-                <fieldset>
-                    <label htmlFor="price">Price</label>
-                    <input
-                        id="price"
-                        type="number"
-                        name="price"
-                        defaultValue={item?.price}
-                    />
-                </fieldset>
-
-                <fieldset>
-                    <label htmlFor="currency">Currency</label>
-                    <input
-                        id="currency"
-                        type="text"
-                        name="currency"
-                        defaultValue={item?.currency}
-                    />
-                </fieldset>
-
-                <button>Update</button>
-            </form> */}
+            <button className="deleteBtn" onClick={showDeleteItem}>
+                Delete
+            </button>
         </section>
     );
 }

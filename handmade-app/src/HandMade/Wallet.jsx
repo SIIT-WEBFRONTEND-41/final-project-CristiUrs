@@ -1,11 +1,11 @@
 import CartIcon from "../Icons/CartIcon";
 import HeartIcon from "../Icons/HeartIcon";
-// import HeartIcon from "../Icons/HeartIcon";
+
 import SearchIcon from "../Icons/SearchIcon";
 import "./Wallet.css";
-// import { WalletItem } from "./Models.js";
+
 import { useEffect, useState } from "react";
-// import { products } from "../HandMade/data";
+
 import { Item } from "./Item";
 import { Link } from "react-router-dom";
 
@@ -65,7 +65,7 @@ export default function Wallet() {
                             <h1>Lion LeatherCraft</h1>
                         </Link>
                     </div>
-                    <div>
+                    <div className="info">
                         <Link to="/shop">
                             <span>Shop</span>
                         </Link>
@@ -96,7 +96,10 @@ export default function Wallet() {
                                 )
                             }
                         />
-                        <HeartIcon></HeartIcon>
+                        <Link to="/wishlist">
+                            <HeartIcon></HeartIcon>
+                        </Link>
+
                         <CartIcon></CartIcon>
                     </div>
                 </nav>

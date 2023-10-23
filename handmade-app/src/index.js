@@ -13,21 +13,15 @@ import Wallet from "./HandMade/Wallet";
 import ItemDetails from "./HandMade/item-details/Item-details";
 import Navigation from "./Navigation";
 import CreateItem from "./create-item/Create-item";
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+import { WishList } from "./wishlist/Wishlist";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: (
             <>
-                <Wallet></Wallet>
                 <Navigation></Navigation>
+                <Wallet></Wallet>
             </>
         ),
     },
@@ -81,6 +75,7 @@ const router = createBrowserRouter([
         element: (
             <>
                 <Navigation></Navigation>
+
                 <div>Pouch</div>
             </>
         ),

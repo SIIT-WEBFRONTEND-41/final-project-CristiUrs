@@ -15,3 +15,20 @@ section {
     right: 30px;
     fill: red;
 }
+
+.news {
+    text-align: center;
+}
+
+.navBar {
+    display: grid;
+    justify-items: center;
+}
+
+.info {
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+}

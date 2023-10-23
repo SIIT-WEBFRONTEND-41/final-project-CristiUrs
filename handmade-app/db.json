@@ -19,8 +19,8 @@
     {
       "id": 5,
       "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": "500",
+      "name": "CHESTNUTttt",
+      "price": "700",
       "currency": "RON",
       "wishlist": false
     },
@@ -95,20 +95,6 @@
       "price": 500,
       "currency": "RON",
       "wishlist": false
-    },
-    {
-      "image": "https://picsum.photos/200/200",
-      "name": "Create new item test",
-      "price": "600",
-      "currency": "RON",
-      "id": 15
-    },
-    {
-      "image": "https://picsum.photos/300/200",
-      "name": "Testing ",
-      "price": "200",
-      "currency": "RON",
-      "id": 16
     }
   ]
 }
