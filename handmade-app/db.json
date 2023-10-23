@@ -11,8 +11,8 @@
     {
       "id": 4,
       "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
+      "name": "Big",
+      "price": "505",
       "currency": "RON",
       "wishlist": false
     },
@@ -51,8 +51,8 @@
     {
       "id": 9,
       "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
+      "name": "Small",
+      "price": "500",
       "currency": "RON",
       "wishlist": false
     },

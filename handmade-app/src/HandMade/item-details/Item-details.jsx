@@ -49,7 +49,7 @@ export default function ItemDetails() {
                 <Dialog
                     yesCb={deleteItem}
                     noCb={hideDialog}
-                    name="Are you sure you wantto remove the item?"
+                    name="Are you sure you want to remove the item?"
                 />
             )}
             <article className="wallet">

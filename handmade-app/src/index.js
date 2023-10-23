@@ -9,92 +9,12 @@ import {
     Route,
     Link,
 } from "react-router-dom";
-import Wallet from "./HandMade/Wallet";
-import ItemDetails from "./HandMade/item-details/Item-details";
-import Navigation from "./Navigation";
-import CreateItem from "./create-item/Create-item";
-import { WishList } from "./wishlist/Wishlist";
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: (
-            <>
-                <Navigation></Navigation>
-                <Wallet></Wallet>
-            </>
-        ),
-    },
-    {
-        path: "products/:id",
-        element: (
-            <>
-                <Navigation></Navigation>
-                <ItemDetails></ItemDetails>
-            </>
-        ),
-    },
-    {
-        path: "/about",
-        element: (
-            <>
-                <Navigation></Navigation>
-                <div>About</div>
-            </>
-        ),
-    },
-    {
-        path: "/shop",
-        element: (
-            <>
-                <Navigation></Navigation>
-                <div>Shop</div>
-            </>
-        ),
-    },
-    {
-        path: "/wallet",
-        element: (
-            <>
-                <Navigation></Navigation>
-                <div>Wallet</div>
-            </>
-        ),
-    },
-    {
-        path: "/bag",
-        element: (
-            <>
-                <Navigation></Navigation>
-                <div>Bag</div>
-            </>
-        ),
-    },
-    {
-        path: "/pouch",
-        element: (
-            <>
-                <Navigation></Navigation>
-
-                <div>Pouch</div>
-            </>
-        ),
-    },
-    {
-        path: "create-item",
-        element: (
-            <>
-                <Navigation></Navigation>
-                <CreateItem></CreateItem>
-            </>
-        ),
-    },
-]);
+import App from "./App";
 
 createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        // <RouterProvider router={router} />
-        //{" "}
+        <App></App>
     </React.StrictMode>
 );
 
