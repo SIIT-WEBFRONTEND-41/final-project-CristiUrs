@@ -4,16 +4,18 @@ import HeartIcon from "../Icons/HeartIcon";
 import SearchIcon from "../Icons/SearchIcon";
 import "./Wallet.css";
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import { Item } from "./Item";
 import { Link } from "react-router-dom";
+import { ItemsContext } from "../ItemContext";
 
 export default function Wallet() {
     const [products, setProducts] = useState([]);
-    const [wallets, setWallets] = useState(products);
+    // const [wallets, setWallets] = useState(products);
     const [searchTerm, setSearchTerm] = useState();
     const [error, setError] = useState(null);
+    const { wallets, setWallets } = useContext(ItemsContext);
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;

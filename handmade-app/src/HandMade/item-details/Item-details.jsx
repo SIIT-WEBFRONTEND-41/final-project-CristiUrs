@@ -1,20 +1,30 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Dialog from "../../dialog/Dialog";
 import ItemForm from "../../item-form/Item-form";
 import "./Item-details.css";
+import { ItemsContext } from "../../ItemContext";
 
 export default function ItemDetails() {
     let { id } = useParams();
     const [item, setItem] = useState(null);
     const [showDialog, setShowDialog] = useState(false);
+    const { wallets } = useContext(ItemsContext);
 
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:3004/products/${id}`)
-            .then((response) => response.json())
-            .then((dataFromServer) => setItem(dataFromServer));
+        const selectedWallet = wallets.find(
+            (storeItem) => storeItem.id === Number(id)
+        );
+
+        if (selectedWallet) {
+            setItem(selectedWallet);
+        } else {
+            fetch(`http://localhost:3004/products/${id}`)
+                .then((response) => response.json())
+                .then((dataFromServer) => setItem(dataFromServer));
+        }
     }, []);
 
     function onSubmit(updatedItem) {
