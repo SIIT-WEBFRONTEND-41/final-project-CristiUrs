@@ -4,14 +4,17 @@ import Dialog from "../../dialog/Dialog";
 import ItemForm from "../../item-form/Item-form";
 import "./Item-details.css";
 import { ItemsContext } from "../../ItemContext";
+import { UserContext, getAccessToken } from "../../UserContext";
 
 export default function ItemDetails() {
     let { id } = useParams();
     const [item, setItem] = useState(null);
     const [showDialog, setShowDialog] = useState(false);
     const { wallets } = useContext(ItemsContext);
+    const { user } = useContext(UserContext);
 
     const navigate = useNavigate();
+    const bearerToken = user?.accessToken || getAccessToken();
 
     useEffect(() => {
         const selectedWallet = wallets.find(
@@ -21,7 +24,11 @@ export default function ItemDetails() {
         if (selectedWallet) {
             setItem(selectedWallet);
         } else {
-            fetch(`http://localhost:3004/products/${id}`)
+            fetch(`http://localhost:3004/products/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${bearerToken}`,
+                },
+            })
                 .then((response) => response.json())
                 .then((dataFromServer) => setItem(dataFromServer));
         }
@@ -33,6 +40,7 @@ export default function ItemDetails() {
             body: JSON.stringify(updatedItem),
             headers: {
                 "content-type": "application/json",
+                Authorization: `Bearer ${bearerToken}`,
             },
         })
             .then((response) => response.json())
@@ -46,6 +54,7 @@ export default function ItemDetails() {
     function deleteItem() {
         fetch(`http://localhost:3004/products/${id}`, {
             method: "DELETE",
+            Authorization: `Bearer ${bearerToken}`,
         }).then(() => navigate("/"));
     }
 

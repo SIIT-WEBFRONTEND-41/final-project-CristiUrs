@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
-import "./Register.css";
+import { useContext, useEffect, useState } from "react";
+import "./Login.css";
+import { UserContext } from "../../UserContext";
 
-export default function Register() {
+export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordError, setPasswordError] = useState(null);
+    const { user, setUser } = useContext(UserContext);
 
     function register(event) {
         event.preventDefault();
@@ -13,15 +15,19 @@ export default function Register() {
             password,
         };
 
-        fetch("http://localhost:3004/register", {
+        fetch("http://localhost:3004/login", {
             method: "POST",
             body: JSON.stringify(body),
             headers: {
-                "content-type": "application/json",
+                "Content-Type": "application/json",
             },
         })
             .then((response) => response.json())
-            .then((data) => console.log(data));
+            .then((response) => {
+                console.log(response.accessToken);
+                localStorage.setItem("access_token", JSON.stringify(response));
+                setUser(response);
+            });
     }
 
     useEffect(() => {
@@ -90,7 +96,7 @@ export default function Register() {
             {passwordError && <p>{passwordError}</p>}
 
             <button type="submit" className="btn btn-primary">
-                Register
+                Log in
             </button>
         </form>
     );

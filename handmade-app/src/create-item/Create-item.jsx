@@ -1,8 +1,11 @@
 import { useState } from "react";
 import ItemForm from "../item-form/Item-form";
+import { UserContext } from "../UserContext";
 
 export default function CreateItem() {
     const [success, setSuccess] = useState(false);
+    // const { user } = useContext(UserContext);
+    // const bearerToken = user?.accessToken || getAccessToken();
 
     function submit(updatedItem) {
         setSuccess(false);
@@ -11,6 +14,7 @@ export default function CreateItem() {
             method: "POST",
             headers: {
                 "content-type": "application/json",
+                // Authorization: `Bearer ${bearerToken}`,
             },
             body: JSON.stringify(updatedItem),
         }).then((response) => {

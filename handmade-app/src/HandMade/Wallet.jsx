@@ -7,27 +7,45 @@ import "./Wallet.css";
 import { useContext, useEffect, useState } from "react";
 
 import { Item } from "./Item";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
+import { UserContext, getAccessToken } from "../UserContext";
 
 export default function Wallet() {
     const [products, setProducts] = useState([]);
-    // const [wallets, setWallets] = useState(products);
     const [searchTerm, setSearchTerm] = useState();
     const [error, setError] = useState(null);
     const { wallets, setWallets } = useContext(ItemsContext);
+    const navigate = useNavigate();
+    const { user } = useContext(UserContext);
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
         setWallets(structuredClone(wallets));
         console.log(products.wishlist);
     }
-    console.log(searchTerm);
 
     useEffect(() => {
         setError(null);
-        fetch("http://localhost:3004/products")
-            .then((response) => response.json())
+
+        const bearerToken = user?.accessToken || getAccessToken();
+
+        fetch("http://localhost:3004/products", {
+            headers: {
+                Authorization: `Bearer ${bearerToken}`,
+            },
+        })
+            .then((response) => {
+                if (response.ok) {
+                    return response.json();
+                }
+
+                if (response.status === 401) {
+                    navigate("/login");
+                }
+
+                throw new Error(response);
+            })
             .then((data) => {
                 setWallets(data);
                 setProducts(data);
