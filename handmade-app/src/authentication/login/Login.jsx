@@ -1,12 +1,14 @@
 import { useContext, useEffect, useState } from "react";
 import "./Login.css";
 import { UserContext } from "../../UserContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordError, setPasswordError] = useState(null);
     const { user, setUser } = useContext(UserContext);
+    const navigate = useNavigate();
 
     function register(event) {
         event.preventDefault();
@@ -24,9 +26,9 @@ export default function Login() {
         })
             .then((response) => response.json())
             .then((response) => {
-                console.log(response.accessToken);
                 localStorage.setItem("access_token", JSON.stringify(response));
                 setUser(response);
+                navigate("/");
             });
     }
 
@@ -64,13 +66,13 @@ export default function Login() {
 
     return (
         <form onSubmit={register}>
-            <fieldset class="mb-3">
+            <fieldset className="mb-3">
                 <label htmlFor="email" className="form-label">
                     Email address
                 </label>
                 <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     id="email"
                     aria-describedby="emailHelp"
                     name="email"
@@ -79,7 +81,7 @@ export default function Login() {
                     onChange={(event) => setEmail(event.target.value)}
                 />
             </fieldset>
-            <fieldset class="mb-3">
+            <fieldset className="mb-3">
                 <label htmlFor="password" className="form-label">
                     Password
                 </label>

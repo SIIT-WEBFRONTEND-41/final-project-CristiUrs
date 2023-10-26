@@ -22,7 +22,7 @@ export default function UserContextProvider(props) {
 
 export function getAccessToken() {
     const tokenStorage = JSON.parse(
-        window.localStorage.getItem("access_token") || {}
+        window.localStorage.getItem("access_token") || "{}"
     );
 
     return tokenStorage?.accessToken;

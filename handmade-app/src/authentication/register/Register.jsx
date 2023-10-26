@@ -58,13 +58,13 @@ export default function Register() {
 
     return (
         <form onSubmit={register}>
-            <fieldset class="mb-3">
+            <fieldset className="mb-3">
                 <label htmlFor="email" className="form-label">
                     Email address
                 </label>
                 <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     id="email"
                     aria-describedby="emailHelp"
                     name="email"
@@ -73,7 +73,7 @@ export default function Register() {
                     onChange={(event) => setEmail(event.target.value)}
                 />
             </fieldset>
-            <fieldset class="mb-3">
+            <fieldset className="mb-3">
                 <label htmlFor="password" className="form-label">
                     Password
                 </label>
