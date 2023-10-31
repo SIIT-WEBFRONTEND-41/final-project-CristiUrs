@@ -1,0 +1,18 @@
+.footer {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-brand {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: space-between;
+}

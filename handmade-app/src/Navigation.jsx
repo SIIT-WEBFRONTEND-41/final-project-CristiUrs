@@ -14,29 +14,35 @@ export default function Navigation() {
 
     return (
         <nav className="navigation">
-            <ul>
-                <li>
+            <ul className="navBar">
+                <li className="navbarItem">
                     <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li className="navbarItem">
                     <Link to="/about">About</Link>
                 </li>
-                <li>
-                    <Link to="/create-item">Create Item</Link>
-                </li>
+
                 {!user?.user ? (
                     <>
-                        <li>
+                        <li className="navbarItem">
                             <Link to="/register">Register</Link>
                         </li>
-                        <li>
+                        <li className="navbarItem">
                             <Link to="/login">Log in</Link>
                         </li>
                     </>
                 ) : (
-                    <li>
-                        <span onClick={logout}>Logout</span>
-                    </li>
+                    <>
+                        <li className="navbarItem">
+                            <Link to="/create-item">Create Item</Link>
+                        </li>
+                        <li>
+                            <Link to="/wishlist">Wishlist</Link>
+                        </li>
+                        <li className="navbarItem">
+                            <span onClick={logout}>Logout</span>
+                        </li>
+                    </>
                 )}
             </ul>
         </nav>

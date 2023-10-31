@@ -10,6 +10,7 @@ import { Item } from "./Item";
 import { Link, useNavigate } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
+import Footer from "./Footer";
 
 export default function Wallet() {
     const [products, setProducts] = useState([]);
@@ -22,7 +23,6 @@ export default function Wallet() {
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
         setWallets(structuredClone(wallets));
-        console.log(products.wishlist);
     }
 
     useEffect(() => {
@@ -67,7 +67,7 @@ export default function Wallet() {
 
     if (error) {
         return (
-            <section>
+            <section className="mr-px">
                 There has been a problem loading our movies. Try again later.
             </section>
         );
@@ -76,7 +76,7 @@ export default function Wallet() {
     return (
         <main>
             <header>
-                <div className="news">
+                <div className="news bg-blue-500 text-white p-4 rounded-lg">
                     <p>Free Shipping over £150</p>
                 </div>
                 <nav className="navBar">
@@ -106,7 +106,7 @@ export default function Wallet() {
                             <span>About Us</span>
                         </Link>
                     </div>
-                    <div>
+                    <div className="search">
                         <SearchIcon></SearchIcon>
                         <input
                             placeholder="Search for something"

@@ -9,6 +9,8 @@ import ItemContextProvider from "./ItemContext";
 import Register from "./authentication/register/Register";
 import Login from "./authentication/login/Login";
 import UserContextProvider from "./UserContext";
+import Wishlist from "./wishlist/Wishlist";
+import Footer from "./HandMade/Footer";
 
 function App() {
     return (
@@ -41,10 +43,15 @@ function App() {
                         ></Route>
                         <Route path="/login" element={<Login></Login>}></Route>
                         <Route
+                            path="/wishlist"
+                            element={<Wishlist></Wishlist>}
+                        ></Route>
+                        <Route
                             path="*"
                             element={<div>Page not found 404</div>}
                         ></Route>
                     </Routes>
+                    <Footer />
                 </Router>
             </ItemContextProvider>
         </UserContextProvider>

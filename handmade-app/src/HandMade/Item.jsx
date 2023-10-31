@@ -2,6 +2,7 @@ import HeartIcon from "../Icons/HeartIcon";
 import HeartFilled from "../Icons/HeartFilledIcon";
 import ImageSvg from "../Icons/WalletIcon";
 import { Link } from "react-router-dom";
+import "./Item.css";
 
 export function Item(props) {
     const { product, bookmark } = props;
@@ -26,16 +27,19 @@ export function Item(props) {
                         )}
                     </span>
                 </div>
-                <div className="wallet__name">
-                    <p className="wallet__name">{name}</p>
-                </div>
-
-                <div>
-                    <ImageSvg />
-                    <span className="wallet__price">
-                        {price}{" "}
-                        <span className="wallet__currency">{currency}</span>
-                    </span>
+                <div className="wallet__info">
+                    <div className="wallet__name">
+                        <p className="wallet__name">{name}</p>
+                    </div>
+                    <div className="wallet__btn">
+                        <button>Add to card</button>
+                    </div>
+                    <div>
+                        <span className="wallet__price">
+                            {price}{" "}
+                            <span className="wallet__currency">{currency}</span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </article>

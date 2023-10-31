@@ -1,262 +1,270 @@
 {
-  "users": [
-    {
-      "email": "30ursulet@gmail.com",
-      "password": "$2a$10$4Hrg/DwPW7NpJscJA1roe./Qk40WPgA00PzBnSo1y5WMScT3EjkIq",
-      "id": 1
-    },
-    {
-      "email": "30urs@gmail.com",
-      "password": "$2a$10$ylQiOrr8lkF33y7SurT0FOGiqFlQhkBSgRajB48mBcjbFDCLKq/26",
-      "id": 2
-    },
-    {
-      "email": "123@gmail.com",
-      "password": "$2a$10$1QUbVp7VtkjtTMzKp/1kpeU7W.Y6oh7Ex/qAGNy.jBkgDdT0CUpe6",
-      "id": 3
-    },
-    {
-      "email": "1234@gmail.com",
-      "password": "$2a$10$kys6V79n3OF5cUakVyJf9eU7XKea9T2Gvw2MMsw5K1v4Uhl7HOBXi",
-      "id": 4
-    },
-    {
-      "email": "1234@email.com",
-      "password": "$2a$10$0dI413jWCAxoYEWgqN8ZzOWdveyFXUpJhGbC7I0vF.duH65ltiSba",
-      "id": 5
-    },
-    {
-      "email": "12345@email.com",
-      "password": "$2a$10$r3aTkrvKjKyNYLf4y9KPR.CwVlxpLqyWfp8rc0JSiBSHwdffHmwwO",
-      "id": 6
-    },
-    {
-      "email": "12@gmail.com",
-      "password": "$2a$10$i9TV/W4ZbSWgBNpnbBO9K.RczyvthYqFXytCa0JnDVDJXEwkd0OiK",
-      "id": 7
-    },
-    {
-      "email": "hei@gmail.com",
-      "password": "$2a$10$FaGEpQgIDraW2XpQLyUFiedjagYrCfggPR1fAWvLeDlcRxXPLdulq",
-      "id": 8
-    }
-  ],
-  "products": [
-    {
-      "id": 3,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": "700",
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 6,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 7,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": "150",
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 8,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 9,
-      "image": "https://picsum.photos/200/300",
-      "name": "Small",
-      "price": "500",
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 10,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 11,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 12,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 13,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 14,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 15,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 16,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 17,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 18,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 19,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 20,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 21,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 22,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 23,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 24,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 25,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 26,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 27,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 28,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 29,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 30,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    },
-    {
-      "id": 31,
-      "image": "https://picsum.photos/200/300",
-      "name": "CHESTNUT",
-      "price": 500,
-      "currency": "RON",
-      "wishlist": false
-    }
-  ]
+    "users": [
+        {
+            "email": "30ursulet@gmail.com",
+            "password": "$2a$10$4Hrg/DwPW7NpJscJA1roe./Qk40WPgA00PzBnSo1y5WMScT3EjkIq",
+            "id": 1
+        },
+        {
+            "email": "30urs@gmail.com",
+            "password": "$2a$10$ylQiOrr8lkF33y7SurT0FOGiqFlQhkBSgRajB48mBcjbFDCLKq/26",
+            "id": 2
+        },
+        {
+            "email": "123@gmail.com",
+            "password": "$2a$10$1QUbVp7VtkjtTMzKp/1kpeU7W.Y6oh7Ex/qAGNy.jBkgDdT0CUpe6",
+            "id": 3
+        },
+        {
+            "email": "1234@gmail.com",
+            "password": "$2a$10$kys6V79n3OF5cUakVyJf9eU7XKea9T2Gvw2MMsw5K1v4Uhl7HOBXi",
+            "id": 4
+        },
+        {
+            "email": "1234@email.com",
+            "password": "$2a$10$0dI413jWCAxoYEWgqN8ZzOWdveyFXUpJhGbC7I0vF.duH65ltiSba",
+            "id": 5
+        },
+        {
+            "email": "12345@email.com",
+            "password": "$2a$10$r3aTkrvKjKyNYLf4y9KPR.CwVlxpLqyWfp8rc0JSiBSHwdffHmwwO",
+            "id": 6
+        },
+        {
+            "email": "12@gmail.com",
+            "password": "$2a$10$i9TV/W4ZbSWgBNpnbBO9K.RczyvthYqFXytCa0JnDVDJXEwkd0OiK",
+            "id": 7
+        },
+        {
+            "email": "hei@gmail.com",
+            "password": "$2a$10$FaGEpQgIDraW2XpQLyUFiedjagYrCfggPR1fAWvLeDlcRxXPLdulq",
+            "id": 8
+        }
+    ],
+    "products": [
+        {
+            "id": 3,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": "700",
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 6,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 7,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": "150",
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 8,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 9,
+            "image": "https://picsum.photos/200/300",
+            "name": "Small",
+            "price": "500",
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 10,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 11,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 12,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 13,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": true
+        },
+        {
+            "id": 14,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 15,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": true
+        },
+        {
+            "id": 16,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": true
+        },
+        {
+            "id": 17,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 18,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 19,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 20,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": true
+        },
+        {
+            "id": 21,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 22,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 23,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 24,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 25,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 26,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 27,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 28,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 29,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 30,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "id": 31,
+            "image": "https://picsum.photos/200/300",
+            "name": "CHESTNUT",
+            "price": 500,
+            "currency": "RON",
+            "wishlist": false
+        },
+        {
+            "image": "https://picsum.photos/200/300",
+            "name": "Card holder",
+            "price": "1000",
+            "currency": "RON",
+            "id": 32,
+            "wishlist": false
+        }
+    ]
 }

@@ -1,7 +1,8 @@
-section {
+.wallet-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-evenly;
 }
 
 .wallet__card {
@@ -21,14 +22,26 @@ section {
 }
 
 .navBar {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: antiquewhite;
+    border-radius: 10px;
 }
 
 .info {
-    display: grid;
+    display: flex;
 }
 
 a {
     text-decoration: none;
+    margin-right: 15px;
+}
+.search {
+    display: flex;
+}
+
+.wallet__info {
+    display: grid;
+    place-items: center;
 }

@@ -1,0 +1,7 @@
+.wallet {
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.wallet__btn {
+    border: 1px solid red;
+}
