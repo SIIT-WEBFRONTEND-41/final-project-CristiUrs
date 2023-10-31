@@ -65,41 +65,52 @@ export default function Login() {
     }, [password]);
 
     return (
-        <form onSubmit={register}>
-            <fieldset className="mb-3">
-                <label htmlFor="email" className="form-label">
-                    Email address
-                </label>
-                <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    aria-describedby="emailHelp"
-                    name="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
-                />
-            </fieldset>
-            <fieldset className="mb-3">
-                <label htmlFor="password" className="form-label">
-                    Password
-                </label>
-                <input
-                    type="password"
-                    className="form-control"
-                    id="password"
-                    placeholder="Enter your password"
-                    value={password}
-                    onChange={(event) => setPassword(event.target.value)}
-                />
-            </fieldset>
+        <main className="login">
+            <div>
+                <h3>Login</h3>
+            </div>
+            <div>
+                <p>Please enter your e-mail and password:</p>
+            </div>
+            <form onSubmit={register} className="formLogin">
+                <fieldset className="mb-3">
+                    <label htmlFor="email" className="form-label">
+                        Email address
+                    </label>
+                    <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        aria-describedby="emailHelp"
+                        name="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                    />
+                </fieldset>
+                <fieldset className="mb-3">
+                    <label htmlFor="password" className="form-label">
+                        Password
+                    </label>
+                    <input
+                        type="password"
+                        className="form-control"
+                        id="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                    />
+                </fieldset>
 
-            {passwordError && <p>{passwordError}</p>}
+                {passwordError && <p>{passwordError}</p>}
 
-            <button type="submit" className="btn btn-primary">
-                Log in
-            </button>
-        </form>
+                <button type="submit" className="btn btn-primary">
+                    Login
+                </button>
+            </form>
+            <div>
+                <p>Don't have an account? Create one</p>
+            </div>
+        </main>
     );
 }

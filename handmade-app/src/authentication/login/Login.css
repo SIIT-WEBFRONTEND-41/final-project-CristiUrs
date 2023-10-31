@@ -1,4 +1,8 @@
-form {
+.formLogin {
     max-width: 800px;
     margin: 0 auto;
+}
+.login {
+    display: grid;
+    place-items: center;
 }

@@ -13,9 +13,7 @@ import { UserContext, getAccessToken } from "../../src/UserContext";
 export default function Wishlist() {
     const [products, setProducts] = useState([]);
 
-    const [error, setError] = useState(null);
     const { wallets, setWallets } = useContext(ItemsContext);
-    const [success, setSuccess] = useState(false);
 
     const { user } = useContext(UserContext);
 

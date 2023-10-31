@@ -57,41 +57,61 @@ export default function Register() {
     }, [password]);
 
     return (
-        <form onSubmit={register}>
-            <fieldset className="mb-3">
-                <label htmlFor="email" className="form-label">
-                    Email address
-                </label>
-                <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    aria-describedby="emailHelp"
-                    name="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(event) => setEmail(event.target.value)}
-                />
-            </fieldset>
-            <fieldset className="mb-3">
-                <label htmlFor="password" className="form-label">
-                    Password
-                </label>
-                <input
-                    type="password"
-                    className="form-control"
-                    id="password"
-                    placeholder="Enter your password"
-                    value={password}
-                    onChange={(event) => setPassword(event.target.value)}
-                />
-            </fieldset>
+        <main className="createAccount">
+            <div className="">
+                <h3>Register</h3>
+            </div>
+            <div>
+                <p>Please fill in the information below:</p>
+            </div>
+            <form onSubmit={register} className="formRegister">
+                <fieldset>
+                    <label htmlFor="firstName">First Name:</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="First name"
+                    />
+                </fieldset>
+                <fieldset>
+                    <label htmlFor="lastName">Last Name:</label>
+                    <input type="text" id="lastName" placeholder="Last name" />
+                </fieldset>
+                <fieldset className="mb-3">
+                    <label htmlFor="email" className="form-label">
+                        Email address
+                    </label>
+                    <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        aria-describedby="emailHelp"
+                        name="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                    />
+                </fieldset>
+                <fieldset className="mb-3">
+                    <label htmlFor="password" className="form-label">
+                        Password
+                    </label>
+                    <input
+                        type="password"
+                        className="form-control"
+                        id="password"
+                        placeholder="Enter your password"
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                    />
+                </fieldset>
 
-            {passwordError && <p>{passwordError}</p>}
+                {passwordError && <p>{passwordError}</p>}
 
-            <button type="submit" className="btn btn-primary">
-                Register
-            </button>
-        </form>
+                <button type="submit" className="btn btn-primary">
+                    Create my account
+                </button>
+            </form>
+        </main>
     );
 }
