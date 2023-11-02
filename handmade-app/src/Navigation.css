@@ -1,6 +1,13 @@
 .navigation {
     display: grid;
     text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 li,

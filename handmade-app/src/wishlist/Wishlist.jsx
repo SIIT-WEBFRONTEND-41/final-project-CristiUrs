@@ -1,8 +1,3 @@
-import CartIcon from "../Icons/CartIcon";
-import HeartIcon from "../Icons/HeartIcon";
-
-import SearchIcon from "../Icons/SearchIcon";
-
 import { useContext, useEffect, useState } from "react";
 
 import { Item } from "../HandMade/Item";

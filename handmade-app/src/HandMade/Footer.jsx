@@ -1,11 +1,15 @@
 import "./Footer.css";
+import logo from "../Image/logo.jpg";
+import InstagramIcon from "../Icons/InstagramIcon";
+import FacebookIcon from "../Icons/FacebookIcon";
+import YoutubeIcon from "../Icons/Youtube";
 
 export default function Footer() {
     return (
         <footer className="footer">
             <div className="footer-brand footer-up">
                 <div className="brand">
-                    <img src="https://picsum.photos/50/50" alt="" />
+                    <img src={logo} alt="Logo" className="logo" />
                 </div>
                 <div className="footer-info">
                     <h3>Information</h3>
@@ -37,10 +41,31 @@ export default function Footer() {
                         <button>Sign Up</button>
                     </div>
                     <div>
-                        <ul>
-                            <li>Faceebook</li>
-                            <li>Instagram</li>
-                            <li>Twitter</li>
+                        <ul className="social">
+                            <li>
+                                <a
+                                    href="https://www.facebook.com/lionleathercraftuk"
+                                    target="_blank"
+                                >
+                                    <FacebookIcon></FacebookIcon>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/lionleathercraftuk/"
+                                    target="_blank"
+                                >
+                                    <InstagramIcon></InstagramIcon>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.youtube.com/@LeathrCrafts"
+                                    target="_blank"
+                                >
+                                    <YoutubeIcon></YoutubeIcon>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

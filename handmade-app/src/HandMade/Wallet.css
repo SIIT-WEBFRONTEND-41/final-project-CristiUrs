@@ -45,3 +45,10 @@ a {
     display: grid;
     place-items: center;
 }
+.logoName {
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+.userLogin {
+    text-align: center;
+}

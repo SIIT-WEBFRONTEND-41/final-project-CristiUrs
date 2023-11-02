@@ -1,16 +1,23 @@
 import { useEffect, useState } from "react";
 import "./Register.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
     const [passwordError, setPasswordError] = useState(null);
+    const navigate = useNavigate();
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     function register(event) {
         event.preventDefault();
         const body = {
             email,
             password,
+            firstName,
+            lastName,
         };
 
         fetch("http://localhost:3004/register", {
@@ -19,9 +26,15 @@ export default function Register() {
             headers: {
                 "content-type": "application/json",
             },
-        })
-            .then((response) => response.json())
-            .then((data) => console.log(data));
+        }).then((response) => {
+            if (response.ok) {
+                setShowSuccessMessage(true);
+                setTimeout(() => {
+                    setShowSuccessMessage(false);
+                    navigate("/login");
+                }, 3000);
+            }
+        });
     }
 
     useEffect(() => {
@@ -65,19 +78,29 @@ export default function Register() {
                 <p>Please fill in the information below:</p>
             </div>
             <form onSubmit={register} className="formRegister">
-                <fieldset>
+                <fieldset className="form__input">
                     <label htmlFor="firstName">First Name:</label>
                     <input
                         type="text"
                         id="firstName"
                         placeholder="First name"
+                        name="firstName"
+                        value={firstName}
+                        onChange={(event) => setFirstName(event.target.value)}
                     />
                 </fieldset>
-                <fieldset>
+                <fieldset className="form__input">
                     <label htmlFor="lastName">Last Name:</label>
-                    <input type="text" id="lastName" placeholder="Last name" />
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Last name"
+                        name="lastName"
+                        value={lastName}
+                        onChange={(event) => setLastName(event.target.value)}
+                    />
                 </fieldset>
-                <fieldset className="mb-3">
+                <fieldset className="form__input">
                     <label htmlFor="email" className="form-label">
                         Email address
                     </label>
@@ -92,7 +115,7 @@ export default function Register() {
                         onChange={(event) => setEmail(event.target.value)}
                     />
                 </fieldset>
-                <fieldset className="mb-3">
+                <fieldset className="form__input">
                     <label htmlFor="password" className="form-label">
                         Password
                     </label>
@@ -108,10 +131,18 @@ export default function Register() {
 
                 {passwordError && <p>{passwordError}</p>}
 
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-primary form__input">
                     Create my account
                 </button>
             </form>
+            {showSuccessMessage && (
+                <div>
+                    <p>
+                        Contul a fost creat cu succes. Acum vă puteți
+                        autentifica.
+                    </p>
+                </div>
+            )}
         </main>
     );
 }

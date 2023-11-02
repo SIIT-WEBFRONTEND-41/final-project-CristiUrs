@@ -11,6 +11,7 @@ import Login from "./authentication/login/Login";
 import UserContextProvider from "./UserContext";
 import Wishlist from "./wishlist/Wishlist";
 import Footer from "./HandMade/Footer";
+import NavLogin from "./HandMade/NavLogin";
 
 function App() {
     return (
@@ -24,6 +25,10 @@ function App() {
                         <Route
                             path="products/:id"
                             element={<ItemDetails></ItemDetails>}
+                        ></Route>
+                        <Route
+                            path="users/:lastName"
+                            element={<NavLogin></NavLogin>}
                         ></Route>
                         <Route path="/about" element={<div>About</div>}></Route>
                         <Route path="/shop" element={<div>Shop</div>}></Route>

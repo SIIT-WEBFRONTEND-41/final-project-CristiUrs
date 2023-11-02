@@ -17,8 +17,11 @@ export default function ItemForm(props) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <fieldset>
+        <form onSubmit={handleSubmit} className="formItem">
+            <div className="formTitle">
+                <h3>Create Item</h3>
+            </div>
+            <fieldset className="mb-3">
                 <label htmlFor="url">URL:</label>
                 <input
                     id="url"
@@ -28,7 +31,7 @@ export default function ItemForm(props) {
                 />
             </fieldset>
 
-            <fieldset>
+            <fieldset className="mb-3">
                 <label htmlFor="name">Name</label>
                 <input
                     id="name"
@@ -38,7 +41,7 @@ export default function ItemForm(props) {
                 />
             </fieldset>
 
-            <fieldset>
+            <fieldset className="mb-3">
                 <label htmlFor="price">Price</label>
                 <input
                     id="price"
@@ -48,7 +51,7 @@ export default function ItemForm(props) {
                 />
             </fieldset>
 
-            <fieldset>
+            <fieldset className="mb-3">
                 <label htmlFor="currency">Currency</label>
                 <input
                     id="currency"
@@ -58,7 +61,7 @@ export default function ItemForm(props) {
                 />
             </fieldset>
 
-            <button>Update</button>
+            <button className="mb-3">Update</button>
         </form>
     );
 }

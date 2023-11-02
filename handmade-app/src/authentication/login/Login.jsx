@@ -28,6 +28,7 @@ export default function Login() {
             .then((response) => {
                 localStorage.setItem("access_token", JSON.stringify(response));
                 setUser(response);
+
                 navigate("/");
             });
     }
@@ -66,8 +67,8 @@ export default function Login() {
 
     return (
         <main className="login">
-            <div>
-                <h3>Login</h3>
+            <div className="loginTitle">
+                <h1>Login</h1>
             </div>
             <div>
                 <p>Please enter your e-mail and password:</p>
@@ -104,7 +105,7 @@ export default function Login() {
 
                 {passwordError && <p>{passwordError}</p>}
 
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-primary mb-3">
                     Login
                 </button>
             </form>

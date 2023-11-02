@@ -1,7 +1,9 @@
-.formLogin {
+.formItem {
     max-width: 800px;
     margin: 0 auto;
     letter-spacing: 0.2em;
+    display: grid;
+    place-items: center;
 }
 .login {
     display: grid;
@@ -16,7 +18,7 @@
     background: transparent;
     border: 1px solid black;
 }
-.loginTitle {
+.formTitle {
     font-size: 25px;
     text-transform: uppercase;
     padding: 15px;

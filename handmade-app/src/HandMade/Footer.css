@@ -16,3 +16,16 @@
     display: flex;
     justify-content: space-between;
 }
+
+.logo {
+    width: 50px;
+}
+.social {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.news-later {
+    display: grid;
+    place-items: center;
+}

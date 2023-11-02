@@ -1,8 +1,17 @@
 .formRegister {
     max-width: 800px;
     margin: 0 auto;
+    letter-spacing: 0.2em;
 }
 .createAccount {
     display: grid;
     place-items: center;
+    letter-spacing: 0.2em;
+}
+.form__input {
+    margin-bottom: 15px;
+    padding: 12px 14px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
 }

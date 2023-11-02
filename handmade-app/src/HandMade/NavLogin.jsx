@@ -11,7 +11,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
 
-export default function Wallet() {
+export default function NavLogin() {
     const [products, setProducts] = useState([]);
     const [searchTerm, setSearchTerm] = useState();
     const [error, setError] = useState(null);
@@ -23,6 +23,31 @@ export default function Wallet() {
         product.wishlist = !wishlist;
         setWallets(structuredClone(wallets));
     }
+
+    useEffect(() => {
+        setError(null);
+
+        const bearerToken = user?.accessToken || getAccessToken();
+
+        fetch("http://localhost:3004/users", {
+            headers: {
+                Authorization: `Bearer ${bearerToken}`,
+            },
+        })
+            .then((response) => {
+                if (response.ok) {
+                    return response.json();
+                }
+
+                if (response.status === 401) {
+                    navigate("/login");
+                }
+
+                throw new Error(response);
+            })
+            .then((data) => {})
+            .catch((err) => setError(err));
+    }, []);
 
     useEffect(() => {
         setError(null);
@@ -75,6 +100,7 @@ export default function Wallet() {
     return (
         <main>
             <header>
+                {/* {bearerToken && <h1>Bun venit, {bearerToken}!</h1>} */}
                 <nav className="navBar">
                     <div className="logoName">
                         <Link to="/">
@@ -120,9 +146,6 @@ export default function Wallet() {
                     </div>
                 </nav>
             </header>
-            {user?.user?.firstName && (
-                <h3 className="userLogin">Welcome, {user?.user?.firstName}!</h3>
-            )}
             <section className="wallet-container">
                 {wallets.map((product) => (
                     <Item

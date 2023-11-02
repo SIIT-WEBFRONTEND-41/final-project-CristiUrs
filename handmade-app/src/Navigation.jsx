@@ -10,6 +10,7 @@ export default function Navigation() {
     function logout() {
         localStorage.removeItem("access_token");
         navigate("/login");
+        window.location.reload();
     }
 
     return (
@@ -28,7 +29,7 @@ export default function Navigation() {
                             <Link to="/register">Register</Link>
                         </li>
                         <li className="navbarItem">
-                            <Link to="/login">Log in</Link>
+                            <Link to="/login">Login</Link>
                         </li>
                     </>
                 ) : (

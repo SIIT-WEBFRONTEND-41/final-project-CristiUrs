@@ -13,7 +13,7 @@ export function Item(props) {
             <div className="wallet__card">
                 <div className="wallet_photo">
                     <Link to={`products/${id}`}>
-                        <img src={image} alt="" />
+                        <img src={image} alt="" className="img" />
                     </Link>
 
                     <span
@@ -31,14 +31,15 @@ export function Item(props) {
                     <div className="wallet__name">
                         <p className="wallet__name">{name}</p>
                     </div>
-                    <div className="wallet__btn">
-                        <button>Add to card</button>
-                    </div>
+
                     <div>
                         <span className="wallet__price">
                             {price}{" "}
                             <span className="wallet__currency">{currency}</span>
                         </span>
+                    </div>
+                    <div className="wallet__btn">
+                        <button>Add to card</button>
                     </div>
                 </div>
             </div>
