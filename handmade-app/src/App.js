@@ -12,6 +12,9 @@ import UserContextProvider from "./UserContext";
 import Wishlist from "./wishlist/Wishlist";
 import Footer from "./HandMade/Footer";
 import NavLogin from "./HandMade/NavLogin";
+import Bag from "./Products/bag/bag";
+import Pouch from "./Products/pouch/Pouch";
+import CardHolder from "./Products/cardHolder/CardHolder";
 
 function App() {
     return (
@@ -31,13 +34,16 @@ function App() {
                             element={<NavLogin></NavLogin>}
                         ></Route>
                         <Route path="/about" element={<div>About</div>}></Route>
-                        <Route path="/shop" element={<div>Shop</div>}></Route>
+                        <Route
+                            path="/cardHolder"
+                            element={<CardHolder></CardHolder>}
+                        ></Route>
                         <Route
                             path="/wallet"
-                            element={<div>Wallet</div>}
+                            element={<Wallet></Wallet>}
                         ></Route>
-                        <Route path="/bag" element={<div>Bag</div>}></Route>
-                        <Route path="/pouch" element={<div>Pouch</div>}></Route>
+                        <Route path="/bag" element={<Bag></Bag>}></Route>
+                        <Route path="/pouch" element={<Pouch></Pouch>}></Route>
                         <Route
                             path="/create-item"
                             element={<CreateItem></CreateItem>}

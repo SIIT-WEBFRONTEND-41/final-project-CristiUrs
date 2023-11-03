@@ -10,6 +10,7 @@ import { Item } from "./Item";
 import { Link, useNavigate } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
+import Bag from "../Products/bag/bag";
 
 export default function Wallet() {
     const [products, setProducts] = useState([]);
@@ -94,12 +95,8 @@ export default function Wallet() {
                         <Link to="/pouch">
                             <span>Pouch</span>
                         </Link>
-                        <Link to="/holder">
+                        <Link to="/cardHolder">
                             <span>CardHolder</span>
-                        </Link>
-
-                        <Link to="/about">
-                            <span>About Us</span>
                         </Link>
                     </div>
                     <div className="search">

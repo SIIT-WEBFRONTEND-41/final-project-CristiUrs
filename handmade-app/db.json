@@ -133,7 +133,7 @@
         {
             "id": 8,
             "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/l6piwtraixfcdddwuvww.jpg",
-            "name": "CHESTNUT",
+            "name": "bag",
             "price": 500,
             "currency": "RON",
             "wishlist": false
@@ -149,7 +149,7 @@
         {
             "id": 10,
             "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/eynlylro5ss6cqlhjepo.jpg",
-            "name": "CHESTNUT",
+            "name": "Bag",
             "price": 500,
             "currency": "RON",
             "wishlist": false
@@ -165,7 +165,7 @@
         {
             "id": 12,
             "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937788/Images/fg1xujcmgqyos25kxkid.jpg0",
-            "name": "CHESTNUT",
+            "name": "Bag",
             "price": 500,
             "currency": "RON",
             "wishlist": false

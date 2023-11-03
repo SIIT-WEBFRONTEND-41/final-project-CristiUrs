@@ -74,7 +74,7 @@ export default function ItemDetails() {
             <article className="wallet">
                 <div className="wallet__card">
                     <div className="wallet_photo">
-                        <img src={item?.image} alt="" />
+                        <img src={item?.image} alt="" className="img" />
                     </div>
                     <div className="wallet__name">
                         <p className="wallet__name">{item?.name}</p>
