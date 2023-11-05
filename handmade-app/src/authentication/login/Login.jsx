@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import "./Login.css";
 import { UserContext } from "../../UserContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -103,14 +103,17 @@ export default function Login() {
                     />
                 </fieldset>
 
-                {passwordError && <p>{passwordError}</p>}
+                <p>{passwordError}</p>
 
                 <button type="submit" className="btn btn-primary mb-3">
                     Login
                 </button>
             </form>
             <div>
-                <p>Don't have an account? Create one</p>
+                <p>
+                    Don't have an account?{" "}
+                    <Link to="/register">Create one</Link>
+                </p>
             </div>
         </main>
     );

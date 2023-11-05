@@ -6,7 +6,7 @@ import "./Item.css";
 
 export function Item(props) {
     const { product, bookmark } = props;
-    const { id, image, name, price, currency, wishlist } = product;
+    const { id, image, name, price, currency, wishlist, details } = product;
 
     return (
         <article className="wallet">
@@ -34,7 +34,7 @@ export function Item(props) {
 
                     <div>
                         <span className="wallet__price">
-                            {price}{" "}
+                            {price}
                             <span className="wallet__currency">{currency}</span>
                         </span>
                     </div>

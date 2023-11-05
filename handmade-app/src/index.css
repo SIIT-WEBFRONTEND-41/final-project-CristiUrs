@@ -7,6 +7,10 @@
     --size-default: 1rem;
     --size-medium: 1.5rem;
     --size-large: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 body {

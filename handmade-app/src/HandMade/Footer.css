@@ -5,6 +5,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
 
 .footer-brand {
@@ -28,4 +29,29 @@
 .news-later {
     display: grid;
     place-items: center;
+}
+
+@media (max-width: 500px) {
+    .footer-brand {
+        display: grid;
+        grid-template-areas:
+            "brand info"
+            "shop news";
+    }
+
+    .footer-brand {
+        grid-area: brand;
+    }
+
+    .footer-info {
+        grid-area: info;
+    }
+
+    .footer-shop {
+        grid-area: shop;
+    }
+
+    .news-later {
+        grid-area: news;
+    }
 }

@@ -15,6 +15,9 @@ import NavLogin from "./HandMade/NavLogin";
 import Bag from "./Products/bag/bag";
 import Pouch from "./Products/pouch/Pouch";
 import CardHolder from "./Products/cardHolder/CardHolder";
+import About from "./about/About";
+import { Item } from "./HandMade/Item";
+import ItemInfo from "./item-info/ItemInfo";
 
 function App() {
     return (
@@ -27,13 +30,13 @@ function App() {
                         <Route path="/" element={<Wallet></Wallet>}></Route>
                         <Route
                             path="products/:id"
-                            element={<ItemDetails></ItemDetails>}
+                            element={<ItemInfo></ItemInfo>}
                         ></Route>
                         <Route
                             path="users/:lastName"
                             element={<NavLogin></NavLogin>}
                         ></Route>
-                        <Route path="/about" element={<div>About</div>}></Route>
+                        <Route path="/about" element={<About></About>}></Route>
                         <Route
                             path="/cardHolder"
                             element={<CardHolder></CardHolder>}

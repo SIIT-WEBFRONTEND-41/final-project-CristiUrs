@@ -20,7 +20,7 @@ export default function Navigation() {
                     <Link to="/">Home</Link>
                 </li>
                 <li className="navbarItem">
-                    <Link to="/about">About US</Link>
+                    <Link to="/about">About</Link>
                 </li>
 
                 {!user?.user ? (

@@ -14,6 +14,15 @@ export default function Wishlist() {
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
+        const productId = product.id;
+
+        fetch(`http://localhost:3004/products/${productId}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(product),
+        });
         setWallets(structuredClone(wallets));
     }
 
