@@ -15,9 +15,58 @@
     width: 100%;
     background: transparent;
     border: 1px solid black;
+    position: relative;
+    height: 65px;
 }
 .loginTitle {
     font-size: 25px;
     text-transform: uppercase;
     padding: 15px;
+}
+.form-control {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 0;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+    line-height: normal;
+    resize: none;
+    transition: border-color 0.1s ease-in-out;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.form-label {
+    position: absolute;
+    bottom: calc(100% - 8px);
+    left: 10px;
+    padding: 0 5px;
+    line-height: normal;
+    color: blue;
+    font-size: 12px;
+    opacity: 0;
+    background: rgba(239, 239, 239, 0);
+    pointer-events: none;
+    transform: translateY(3px);
+    transition: all 0.3s ease-in-out;
+}
+.form-control:not(:placeholder-shown) ~ .form-label {
+    opacity: 1;
+    background: #efefef;
+    transform: translateY(0);
+}
+.passError {
+    width: 650px;
+}
+.btn {
+    background-color: black;
+    width: 630px;
+    height: 39px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
 }

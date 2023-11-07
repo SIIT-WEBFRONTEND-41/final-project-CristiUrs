@@ -3,10 +3,15 @@ import HeartFilled from "../Icons/HeartFilledIcon";
 import ImageSvg from "../Icons/WalletIcon";
 import { Link } from "react-router-dom";
 import "./Item.css";
+import { useEffect, useState } from "react";
 
 export function Item(props) {
-    const { product, bookmark } = props;
+    const { product, bookmark, addToCart } = props;
     const { id, image, name, price, currency, wishlist, details } = product;
+
+    const handleAddToCart = () => {
+        addToCart(product);
+    };
 
     return (
         <article className="wallet">
@@ -39,7 +44,7 @@ export function Item(props) {
                         </span>
                     </div>
                     <div className="wallet__btn">
-                        <button>Add to card</button>
+                        <button onClick={handleAddToCart}>Add to card</button>
                     </div>
                 </div>
             </div>

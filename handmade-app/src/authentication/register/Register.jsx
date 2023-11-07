@@ -138,8 +138,7 @@ export default function Register() {
             {showSuccessMessage && (
                 <div>
                     <p>
-                        Contul a fost creat cu succes. Acum vă puteți
-                        autentifica.
+                        The account was created successfully. You can login now.
                     </p>
                 </div>
             )}

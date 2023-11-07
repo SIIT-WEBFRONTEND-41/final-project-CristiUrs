@@ -1,16 +1,22 @@
 import { useContext, useEffect, useState } from "react";
 
 import { Item } from "../HandMade/Item";
-import { Link, useNavigate } from "react-router-dom";
-import { ItemsContext } from "../../src/ItemContext";
-import { UserContext, getAccessToken } from "../../src/UserContext";
+
+import { ItemsContext } from "../ItemContext";
+
+import { CartContext } from "../CartContext";
 
 export default function Wishlist() {
-    const [products, setProducts] = useState([]);
-
     const { wallets, setWallets } = useContext(ItemsContext);
+    const { cart, setCart } = useContext(CartContext);
 
-    const { user } = useContext(UserContext);
+    const addToCart = (product) => {
+        console.log(product);
+        setCart([...cart, product]);
+    };
+    useEffect(() => {
+        console.log("Cart changed:", cart);
+    }, [cart]);
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
@@ -35,6 +41,7 @@ export default function Wishlist() {
                         key={product.id}
                         product={product}
                         bookmark={bookmark}
+                        addToCart={addToCart}
                     ></Item>
                 ))}
         </section>

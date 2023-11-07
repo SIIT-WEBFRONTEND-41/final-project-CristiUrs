@@ -52,3 +52,69 @@ a {
 .userLogin {
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    .navBar {
+        display: grid;
+        place-items: center;
+        justify-content: space-around;
+        grid-template-areas:
+            "brand"
+            "shop"
+            "info";
+    }
+
+    .logoName {
+        grid-area: brand;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    .search {
+        grid-area: shop;
+    }
+}
+
+@media (max-width: 800px) {
+    .navBar {
+        display: grid;
+        place-items: center;
+        justify-content: space-around;
+        grid-template-areas:
+            "brand"
+            "info"
+            "shop";
+    }
+
+    .logoName {
+        grid-area: brand;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    .search {
+        grid-area: shop;
+    }
+}
+.svg_cart {
+    position: relative;
+}
+.quantity {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    padding: 3px;
+    font-size: 9px;
+    line-height: 1em;
+    font-weight: 500;
+    white-space: nowrap;
+    min-width: 15px;
+    text-align: center;
+    background: red;
+    color: #fff;
+    border-radius: 12px;
+}

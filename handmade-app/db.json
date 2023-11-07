@@ -1,560 +1,560 @@
 {
-    "users": [
-        {
-            "email": "30ursulet@gmail.com",
-            "password": "$2a$10$4Hrg/DwPW7NpJscJA1roe./Qk40WPgA00PzBnSo1y5WMScT3EjkIq",
-            "id": 1
-        },
-        {
-            "email": "30urs@gmail.com",
-            "password": "$2a$10$ylQiOrr8lkF33y7SurT0FOGiqFlQhkBSgRajB48mBcjbFDCLKq/26",
-            "id": 2
-        },
-        {
-            "email": "123@gmail.com",
-            "password": "$2a$10$1QUbVp7VtkjtTMzKp/1kpeU7W.Y6oh7Ex/qAGNy.jBkgDdT0CUpe6",
-            "id": 3
-        },
-        {
-            "email": "1234@gmail.com",
-            "password": "$2a$10$kys6V79n3OF5cUakVyJf9eU7XKea9T2Gvw2MMsw5K1v4Uhl7HOBXi",
-            "id": 4
-        },
-        {
-            "email": "1234@email.com",
-            "password": "$2a$10$0dI413jWCAxoYEWgqN8ZzOWdveyFXUpJhGbC7I0vF.duH65ltiSba",
-            "id": 5
-        },
-        {
-            "email": "12345@email.com",
-            "password": "$2a$10$r3aTkrvKjKyNYLf4y9KPR.CwVlxpLqyWfp8rc0JSiBSHwdffHmwwO",
-            "id": 6
-        },
-        {
-            "email": "12@gmail.com",
-            "password": "$2a$10$i9TV/W4ZbSWgBNpnbBO9K.RczyvthYqFXytCa0JnDVDJXEwkd0OiK",
-            "id": 7
-        },
-        {
-            "email": "hei@gmail.com",
-            "password": "$2a$10$FaGEpQgIDraW2XpQLyUFiedjagYrCfggPR1fAWvLeDlcRxXPLdulq",
-            "id": 8
-        },
-        {
-            "email": "alo@gmail.com",
-            "password": "$2a$10$RCg/Hre5eeVrNq/xW/kXQOsHpZzNMH8v0n.raaMchT4p1tom9ev8S",
-            "id": 9
-        },
-        {
-            "email": "qwe@gmail.com",
-            "password": "$2a$10$/H57R0MHQyZH5HnWIWVm0u/DPzKGMJChtQJgWQ9FQ9z8DZr9SbR7G",
-            "id": 10
-        },
-        {
-            "email": "1qwe@gmail.com",
-            "password": "$2a$10$MbT/BwhGq1yGIAkdZ7wDKe9lTWCBHxJ8NDp2qChc4XJi2M9taARwe",
-            "id": 11
-        },
-        {
-            "email": "asdf@gmail.com",
-            "password": "$2a$10$EBSp4YPPiCDeXs0GdnNucuL84SKls3lSkmn5M4.542v3ucYtAL/iG",
-            "firstName": "Cris",
-            "lastName": "Urs",
-            "id": 12
-        },
-        {
-            "email": "asdfgh@gmail.com",
-            "password": "$2a$10$9XZELo7Lwkb87uJc0Ntj/uynoXTeZy/L80MJBxxHOsTx8urTTiv4e",
-            "firstName": "Cris",
-            "lastName": "Urs",
-            "id": 13
-        },
-        {
-            "email": "as@gmail.com",
-            "password": "$2a$10$.0Wx5O8OERdkRPI2tkicN.CAiZIi5fivPnGBYQQ2GKNmajlPuhiYm",
-            "firstName": "hei",
-            "lastName": "hi",
-            "id": 14
-        },
-        {
-            "email": "asd@gmail.com",
-            "password": "$2a$10$5DZxuPNOcG7G0FPh4Ms4x.p32p1E5yVk5FF72aaJYacho5ir3s1za",
-            "firstName": "Cris",
-            "lastName": "Urs",
-            "id": 15
-        },
-        {
-            "email": "cri@gmail.com",
-            "password": "$2a$10$UP3B.NvOESsUhzdjvmSTZe6Q18GJ3w7eqTmw1HhzNfJHiZcOgg/GS",
-            "firstName": "Cri",
-            "lastName": "Cri",
-            "id": 16
-        },
-        {
-            "email": "1111@gmail.com",
-            "password": "$2a$10$ThBAUU2HQzS7JhkTGFGCZO9Sdclt6BT/OdAvS.dS2dZA.nMnI9gIC",
-            "firstName": "cris",
-            "lastName": "cristi",
-            "id": 17
-        },
-        {
-            "email": "bbb@gmail.com",
-            "password": "$2a$10$LQIL8RSQJqdf4keyWfKVh.mNf5L.pF.0p4wedu6yjDqeFmkwCWDEK",
-            "firstName": "cris",
-            "lastName": "cristi",
-            "id": 18
-        }
-    ],
-    "products": [
-        {
-            "id": 3,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/e5pqiac4b4wbwr4resbw.jpg",
-            "name": "CHESTNUT",
-            "price": 700,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 6,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/i51b6ihgufi3imeh9pvz.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 7,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937791/Images/xexhz5poxafr4chrp1wy.jpg",
-            "name": "CHESTNUT",
-            "price": 150,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 8,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/l6piwtraixfcdddwuvww.jpg",
-            "name": "bag",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 9,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/qm9tbnowusxj58tsw0bk.jpg",
-            "name": "Small",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 10,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/eynlylro5ss6cqlhjepo.jpg",
-            "name": "Bag",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 11,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/snsfjkxfkgtzffmdni5t.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 12,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937773/Images/svqwlb4l9oizwpntpv3g.jpg",
-            "name": "Bag",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": true,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 13,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/djuugbd6tv4xfwqe0xmy.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 14,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937775/Images/tfy8iwtus44fnqfp7xun.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 15,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937778/Images/ap9ah4zjntks4ic1iot7.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 16,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937778/Images/gfitv5xq82a67zbhknng.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 17,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937779/Images/yvd9lf3ynczh8tfyyyj5.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 18,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937779/Images/vawlmoeckse0eolsw7op.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 19,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937780/Images/nlo2bfwhpkocyxkljnzx.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 20,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/yo4sdzz3fzwvgg0jqw4c.png",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 21,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/yr1lbk8lcgpgkmvccxss.png",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 22,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/kzynt3xher3csrn2le0m.png",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 23,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937783/Images/hojhynonah0z4tlzz0zw.png",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 24,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937783/Images/dg61hrzx2agbmydhxtub.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 25,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937783/Images/io90mbhlymxqb9klkusk.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 26,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/hgsxii4xenhbpsdobf7u.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 27,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/l6piwtraixfcdddwuvww.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 28,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/o7tzgxoo3xxbpnwatny4.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 29,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937791/Images/lozr94oswoa77wsmectt.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 30,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/sixe8kbzuacjt1vkboy6.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 31,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/nk20evta4qihf210dbxi.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/e5pqiac4b4wbwr4resbw.jpg",
-            "name": "Card holder",
-            "price": "1000",
-            "currency": "RON",
-            "id": 32,
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 33,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937784/Images/mstx7jsi3iep0ndrldnu.png",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 34,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937783/Images/tbuyrhrsfshmzzbwosgq.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 35,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937784/Images/oed7j6aiwxwmheqqsj5z.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 36,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/jvaqpmq600ptwlyrxulf.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 37,
-            "image": "https://picsum.photos/200/300",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 38,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/bs3tcyaem1mu2hzwhhpc.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 39,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/uqegfwfmer1dclkwzxjy.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 40,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/wfsek3nfweor5mjcrdx8.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 41,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937786/Images/f9hinpbymstmma0f8tb8.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 42,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937786/Images/ohpzbqvq8itagpkcydqq.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 43,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937786/Images/tdcppoeetmvboy5m8lcw.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 44,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/dnl4kbwviyjpyqmmn6x6.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 45,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/vbpcvbbrmecnooyf4yzv.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 47,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/rzyhaxvck3zm97n6eev7.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 46,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/b6yxuxkrcvezhzfmumlh.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 49,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/vbpcvbbrmecnooyf4yzv.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": true,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 50,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/ayaurlgipdnsyqpfbtpm.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 51,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937788/Images/izzf2edp7y8payilhjrh.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 52,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937788/Images/nxcwuf2i4mcls5o440gs.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 53,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/mrbqsmihdvwp6gsxzfow.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 54,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/snsfjkxfkgtzffmdni5t.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        },
-        {
-            "id": 55,
-            "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/vyi7rb3aenprukpvcctp.jpg",
-            "name": "CHESTNUT",
-            "price": 500,
-            "currency": "RON",
-            "wishlist": false,
-            "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
-        }
-    ]
+  "users": [
+    {
+      "email": "30ursulet@gmail.com",
+      "password": "$2a$10$4Hrg/DwPW7NpJscJA1roe./Qk40WPgA00PzBnSo1y5WMScT3EjkIq",
+      "id": 1
+    },
+    {
+      "email": "30urs@gmail.com",
+      "password": "$2a$10$ylQiOrr8lkF33y7SurT0FOGiqFlQhkBSgRajB48mBcjbFDCLKq/26",
+      "id": 2
+    },
+    {
+      "email": "123@gmail.com",
+      "password": "$2a$10$1QUbVp7VtkjtTMzKp/1kpeU7W.Y6oh7Ex/qAGNy.jBkgDdT0CUpe6",
+      "id": 3
+    },
+    {
+      "email": "1234@gmail.com",
+      "password": "$2a$10$kys6V79n3OF5cUakVyJf9eU7XKea9T2Gvw2MMsw5K1v4Uhl7HOBXi",
+      "id": 4
+    },
+    {
+      "email": "1234@email.com",
+      "password": "$2a$10$0dI413jWCAxoYEWgqN8ZzOWdveyFXUpJhGbC7I0vF.duH65ltiSba",
+      "id": 5
+    },
+    {
+      "email": "12345@email.com",
+      "password": "$2a$10$r3aTkrvKjKyNYLf4y9KPR.CwVlxpLqyWfp8rc0JSiBSHwdffHmwwO",
+      "id": 6
+    },
+    {
+      "email": "12@gmail.com",
+      "password": "$2a$10$i9TV/W4ZbSWgBNpnbBO9K.RczyvthYqFXytCa0JnDVDJXEwkd0OiK",
+      "id": 7
+    },
+    {
+      "email": "hei@gmail.com",
+      "password": "$2a$10$FaGEpQgIDraW2XpQLyUFiedjagYrCfggPR1fAWvLeDlcRxXPLdulq",
+      "id": 8
+    },
+    {
+      "email": "alo@gmail.com",
+      "password": "$2a$10$RCg/Hre5eeVrNq/xW/kXQOsHpZzNMH8v0n.raaMchT4p1tom9ev8S",
+      "id": 9
+    },
+    {
+      "email": "qwe@gmail.com",
+      "password": "$2a$10$/H57R0MHQyZH5HnWIWVm0u/DPzKGMJChtQJgWQ9FQ9z8DZr9SbR7G",
+      "id": 10
+    },
+    {
+      "email": "1qwe@gmail.com",
+      "password": "$2a$10$MbT/BwhGq1yGIAkdZ7wDKe9lTWCBHxJ8NDp2qChc4XJi2M9taARwe",
+      "id": 11
+    },
+    {
+      "email": "asdf@gmail.com",
+      "password": "$2a$10$EBSp4YPPiCDeXs0GdnNucuL84SKls3lSkmn5M4.542v3ucYtAL/iG",
+      "firstName": "Cris",
+      "lastName": "Urs",
+      "id": 12
+    },
+    {
+      "email": "asdfgh@gmail.com",
+      "password": "$2a$10$9XZELo7Lwkb87uJc0Ntj/uynoXTeZy/L80MJBxxHOsTx8urTTiv4e",
+      "firstName": "Cris",
+      "lastName": "Urs",
+      "id": 13
+    },
+    {
+      "email": "as@gmail.com",
+      "password": "$2a$10$.0Wx5O8OERdkRPI2tkicN.CAiZIi5fivPnGBYQQ2GKNmajlPuhiYm",
+      "firstName": "hei",
+      "lastName": "hi",
+      "id": 14
+    },
+    {
+      "email": "asd@gmail.com",
+      "password": "$2a$10$5DZxuPNOcG7G0FPh4Ms4x.p32p1E5yVk5FF72aaJYacho5ir3s1za",
+      "firstName": "Cris",
+      "lastName": "Urs",
+      "id": 15
+    },
+    {
+      "email": "cri@gmail.com",
+      "password": "$2a$10$UP3B.NvOESsUhzdjvmSTZe6Q18GJ3w7eqTmw1HhzNfJHiZcOgg/GS",
+      "firstName": "Cri",
+      "lastName": "Cri",
+      "id": 16
+    },
+    {
+      "email": "1111@gmail.com",
+      "password": "$2a$10$ThBAUU2HQzS7JhkTGFGCZO9Sdclt6BT/OdAvS.dS2dZA.nMnI9gIC",
+      "firstName": "cris",
+      "lastName": "cristi",
+      "id": 17
+    },
+    {
+      "email": "bbb@gmail.com",
+      "password": "$2a$10$LQIL8RSQJqdf4keyWfKVh.mNf5L.pF.0p4wedu6yjDqeFmkwCWDEK",
+      "firstName": "cris",
+      "lastName": "cristi",
+      "id": 18
+    }
+  ],
+  "products": [
+    {
+      "id": 3,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/e5pqiac4b4wbwr4resbw.jpg",
+      "name": "CHESTNUT",
+      "price": 700,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 6,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/i51b6ihgufi3imeh9pvz.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 7,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937791/Images/xexhz5poxafr4chrp1wy.jpg",
+      "name": "CHESTNUT",
+      "price": 150,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 8,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/l6piwtraixfcdddwuvww.jpg",
+      "name": "bag",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 9,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/qm9tbnowusxj58tsw0bk.jpg",
+      "name": "Small",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 10,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/eynlylro5ss6cqlhjepo.jpg",
+      "name": "Bag",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 11,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/snsfjkxfkgtzffmdni5t.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 12,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937773/Images/svqwlb4l9oizwpntpv3g.jpg",
+      "name": "Bag",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 13,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/djuugbd6tv4xfwqe0xmy.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 14,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937775/Images/tfy8iwtus44fnqfp7xun.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 15,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937778/Images/ap9ah4zjntks4ic1iot7.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 16,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937778/Images/gfitv5xq82a67zbhknng.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 17,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937779/Images/yvd9lf3ynczh8tfyyyj5.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 18,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937779/Images/vawlmoeckse0eolsw7op.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 19,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937780/Images/nlo2bfwhpkocyxkljnzx.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 20,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/yo4sdzz3fzwvgg0jqw4c.png",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 21,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/yr1lbk8lcgpgkmvccxss.png",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 22,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/kzynt3xher3csrn2le0m.png",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 23,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937783/Images/hojhynonah0z4tlzz0zw.png",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 24,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937783/Images/dg61hrzx2agbmydhxtub.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 25,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937783/Images/io90mbhlymxqb9klkusk.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 26,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/hgsxii4xenhbpsdobf7u.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 27,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/l6piwtraixfcdddwuvww.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 28,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937790/Images/o7tzgxoo3xxbpnwatny4.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": true,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 29,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937791/Images/lozr94oswoa77wsmectt.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 30,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/sixe8kbzuacjt1vkboy6.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 31,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/nk20evta4qihf210dbxi.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937792/Images/e5pqiac4b4wbwr4resbw.jpg",
+      "name": "Card holder",
+      "price": "1000",
+      "currency": "RON",
+      "id": 32,
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 33,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937784/Images/mstx7jsi3iep0ndrldnu.png",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 34,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937783/Images/tbuyrhrsfshmzzbwosgq.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 35,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937784/Images/oed7j6aiwxwmheqqsj5z.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 36,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/jvaqpmq600ptwlyrxulf.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 37,
+      "image": "https://picsum.photos/200/300",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 38,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/bs3tcyaem1mu2hzwhhpc.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 39,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/uqegfwfmer1dclkwzxjy.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 40,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/wfsek3nfweor5mjcrdx8.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 41,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937786/Images/f9hinpbymstmma0f8tb8.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 42,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937786/Images/ohpzbqvq8itagpkcydqq.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 43,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937786/Images/tdcppoeetmvboy5m8lcw.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 44,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/dnl4kbwviyjpyqmmn6x6.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 45,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/vbpcvbbrmecnooyf4yzv.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 47,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/rzyhaxvck3zm97n6eev7.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 46,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/b6yxuxkrcvezhzfmumlh.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 49,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/vbpcvbbrmecnooyf4yzv.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 50,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/ayaurlgipdnsyqpfbtpm.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 51,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937788/Images/izzf2edp7y8payilhjrh.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 52,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937788/Images/nxcwuf2i4mcls5o440gs.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 53,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/mrbqsmihdvwp6gsxzfow.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 54,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/snsfjkxfkgtzffmdni5t.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    },
+    {
+      "id": 55,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937789/Images/vyi7rb3aenprukpvcctp.jpg",
+      "name": "CHESTNUT",
+      "price": 500,
+      "currency": "RON",
+      "wishlist": false,
+      "details": "Meet the Parkland Zip Top, our new brown leather zipped backpack, handmade here in the UK. Smaller in size than our Rolltop design, this versatile bag can be carried by hand or on the back with two comfy shoulder straps. Store your laptop in a padded compartment and keep essentials handy in an external slip pocket. Choose the brown suede backpack for a textured, softer bag. Or pick our vegetable-tanned deer leather for a smooth finish that develops a beautiful patina over time."
+    }
+  ]
 }

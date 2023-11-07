@@ -9,37 +9,10 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-brand footer-up">
                 <div className="brand">
-                    <img src={logo} alt="Logo" className="logo" />
-                </div>
-                <div className="footer-info">
-                    <h3>Information</h3>
-                    <ul className="ul-info">
-                        <li>Contact Us</li>
-                        <li>Customer Service</li>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy & Cookies</li>
-                    </ul>
-                </div>
-                <div className="footer-shop">
-                    <h3>Shop</h3>
-                    <ul className="ul-shop">
-                        <li>Wallets</li>
-                        <li>Pouches</li>
-                        <li>Bags</li>
-                        <li>Card Holder</li>
-                    </ul>
-                </div>
-                <div className="news-later">
                     <div>
-                        <p className="pNewsLater">
-                            Join our mailing list and receive 10% off your first
-                            order.
-                        </p>
+                        <img src={logo} alt="Logo" className="logo" />
                     </div>
-                    <div>
-                        <input type="text" placeholder="Enter your email" />
-                        <button>Sign Up</button>
-                    </div>
+
                     <div>
                         <ul className="social">
                             <li>
@@ -69,11 +42,31 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
+                <div className="footer-info">
+                    <h3>Information</h3>
+                    <ul className="ul-info">
+                        <li>Contact Us</li>
+                        <li>Customer Service</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy & Cookies</li>
+                    </ul>
+                </div>
+                <div className="footer-shop">
+                    <h3>Shop</h3>
+                    <ul className="ul-shop">
+                        <li>Wallets</li>
+                        <li>Pouches</li>
+                        <li>Bags</li>
+                        <li>Card Holder</li>
+                    </ul>
+                </div>
             </div>
 
             <div className="footer-copy footer-up">
                 <div className="copy ">
-                    <span>Copyright</span>
+                    <span>
+                        © 2023 <a href="/">Lion Leather Craft</a>
+                    </span>
                 </div>
                 <div className="terms ">
                     <span>Terms & Conditions</span>

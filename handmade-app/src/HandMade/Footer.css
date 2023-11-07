@@ -7,6 +7,11 @@
     width: 100%;
     margin-top: 20px;
 }
+.footer-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .footer-brand {
     display: flex;
@@ -34,9 +39,13 @@
 @media (max-width: 500px) {
     .footer-brand {
         display: grid;
+        place-items: center;
+        justify-content: space-around;
         grid-template-areas:
-            "brand info"
-            "shop news";
+            "brand"
+            "shop"
+            "info"
+            "news";
     }
 
     .footer-brand {

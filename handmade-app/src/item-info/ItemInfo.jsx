@@ -3,7 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
-import ProductCounter from "./ProductCounter";
+import { CartContext } from "../CartContext";
+
 import "./ItemInfo.css";
 
 export default function ItemInfo() {
@@ -16,6 +17,7 @@ export default function ItemInfo() {
     const [showText2, setShowText2] = useState(false);
     const [buttonText2, setButtonText2] = useState("+");
     const [buttonText1, setButtonText1] = useState("+");
+    const { cart, setCart } = useContext(CartContext);
 
     const toggleText1 = () => {
         setShowText1(!showText1);
@@ -84,6 +86,9 @@ export default function ItemInfo() {
                             days. International returns will incur a cost.
                         </p>
                     )}
+                </div>
+                <div className="wallet__btn">
+                    <button>Add to card</button>
                 </div>
             </div>
         </article>

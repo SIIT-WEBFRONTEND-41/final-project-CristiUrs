@@ -10,7 +10,7 @@ import { Item } from "./Item";
 import { Link, useNavigate } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
-import Bag from "../Products/bag/bag";
+import { CartContext } from "../CartContext";
 
 export default function Wallet() {
     const [products, setProducts] = useState([]);
@@ -19,8 +19,18 @@ export default function Wallet() {
     const { wallets, setWallets } = useContext(ItemsContext);
     const navigate = useNavigate();
     const { user, setUser } = useContext(UserContext);
+    const { cart, setCart } = useContext(CartContext);
+
+    const addToCart = (product) => {
+        console.log(product);
+        setCart([...cart, product]);
+    };
+    useEffect(() => {
+        console.log("Cart changed:", cart);
+    }, [cart]);
 
     function bookmark(product, wishlist) {
+        console.log(product);
         product.wishlist = !wishlist;
         const productId = product.id;
 
@@ -92,9 +102,6 @@ export default function Wallet() {
                         </Link>
                     </div>
                     <div className="info">
-                        <Link to="/shop">
-                            <span>Shop</span>
-                        </Link>
                         <Link to="/wallet">
                             <span>Wallet</span>
                         </Link>
@@ -121,8 +128,16 @@ export default function Wallet() {
                         <Link to="/wishlist">
                             <HeartIcon></HeartIcon>
                         </Link>
-
-                        <CartIcon></CartIcon>
+                        <span>
+                            <Link to="/cart">
+                                <span className="svg_cart">
+                                    <CartIcon />
+                                    <span className="quantity">
+                                        {cart?.length}
+                                    </span>
+                                </span>
+                            </Link>
+                        </span>
                     </div>
                 </nav>
             </header>
@@ -135,6 +150,7 @@ export default function Wallet() {
                         key={product.id}
                         product={product}
                         bookmark={bookmark}
+                        addToCart={addToCart}
                     ></Item>
                 ))}
             </section>

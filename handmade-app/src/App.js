@@ -18,55 +18,72 @@ import CardHolder from "./Products/cardHolder/CardHolder";
 import About from "./about/About";
 import { Item } from "./HandMade/Item";
 import ItemInfo from "./item-info/ItemInfo";
+import SoppingCart from "./sopping-cart/SoppingCart";
+import CartContextProvider from "./CartContext";
 
 function App() {
     return (
         <UserContextProvider>
             <ItemContextProvider>
-                <Router>
-                    <Navigation />
+                <CartContextProvider>
+                    <Router>
+                        <Navigation />
 
-                    <Routes>
-                        <Route path="/" element={<Wallet></Wallet>}></Route>
-                        <Route
-                            path="products/:id"
-                            element={<ItemInfo></ItemInfo>}
-                        ></Route>
-                        <Route
-                            path="users/:lastName"
-                            element={<NavLogin></NavLogin>}
-                        ></Route>
-                        <Route path="/about" element={<About></About>}></Route>
-                        <Route
-                            path="/cardHolder"
-                            element={<CardHolder></CardHolder>}
-                        ></Route>
-                        <Route
-                            path="/wallet"
-                            element={<Wallet></Wallet>}
-                        ></Route>
-                        <Route path="/bag" element={<Bag></Bag>}></Route>
-                        <Route path="/pouch" element={<Pouch></Pouch>}></Route>
-                        <Route
-                            path="/create-item"
-                            element={<CreateItem></CreateItem>}
-                        ></Route>
-                        <Route
-                            path="/register"
-                            element={<Register></Register>}
-                        ></Route>
-                        <Route path="/login" element={<Login></Login>}></Route>
-                        <Route
-                            path="/wishlist"
-                            element={<Wishlist></Wishlist>}
-                        ></Route>
-                        <Route
-                            path="*"
-                            element={<div>Page not found 404</div>}
-                        ></Route>
-                    </Routes>
-                    <Footer />
-                </Router>
+                        <Routes>
+                            <Route path="/" element={<Wallet></Wallet>}></Route>
+                            <Route
+                                path="products/:id"
+                                element={<ItemInfo></ItemInfo>}
+                            ></Route>
+                            <Route
+                                path="users/:lastName"
+                                element={<NavLogin></NavLogin>}
+                            ></Route>
+                            <Route
+                                path="/about"
+                                element={<About></About>}
+                            ></Route>
+                            <Route
+                                path="/cardHolder"
+                                element={<CardHolder></CardHolder>}
+                            ></Route>
+                            <Route
+                                path="/wallet"
+                                element={<Wallet></Wallet>}
+                            ></Route>
+                            <Route path="/bag" element={<Bag></Bag>}></Route>
+                            <Route
+                                path="/pouch"
+                                element={<Pouch></Pouch>}
+                            ></Route>
+                            <Route
+                                path="/create-item"
+                                element={<CreateItem></CreateItem>}
+                            ></Route>
+                            <Route
+                                path="/register"
+                                element={<Register></Register>}
+                            ></Route>
+                            <Route
+                                path="/login"
+                                element={<Login></Login>}
+                            ></Route>
+                            <Route
+                                path="/wishlist"
+                                element={<Wishlist></Wishlist>}
+                            ></Route>
+                            <Route
+                                path="/cart"
+                                element={<SoppingCart></SoppingCart>}
+                            ></Route>
+                            <Route
+                                path="*"
+                                element={<div>Page not found 404</div>}
+                            ></Route>
+                        </Routes>
+                        <Footer />
+                    </Router>
+                </CartContextProvider>
             </ItemContextProvider>
         </UserContextProvider>
     );

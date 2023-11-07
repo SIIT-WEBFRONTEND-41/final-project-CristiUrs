@@ -7,6 +7,7 @@ export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordError, setPasswordError] = useState(null);
+    const [error, setError] = useState("");
     const { user, setUser } = useContext(UserContext);
     const navigate = useNavigate();
 
@@ -17,6 +18,7 @@ export default function Login() {
             password,
         };
 
+        setError(null);
         fetch("http://localhost:3004/login", {
             method: "POST",
             body: JSON.stringify(body),
@@ -24,12 +26,20 @@ export default function Login() {
                 "Content-Type": "application/json",
             },
         })
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    setError(response);
+                    throw new Error("Date de autentificare incorecte");
+                }
+                return response.json();
+            })
             .then((response) => {
                 localStorage.setItem("access_token", JSON.stringify(response));
                 setUser(response);
-
                 navigate("/");
+            })
+            .catch((error) => {
+                console.error("erroare de autentificare", error);
             });
     }
 
@@ -37,8 +47,10 @@ export default function Login() {
         function validatePassword(password) {
             const specialCharacters = ["*", "#", "!", "@"];
 
-            if (password <= 8) {
-                setPasswordError("Password must be at least 8 characters.");
+            if (password.length < 8) {
+                setPasswordError(
+                    "Password must be at least 8 characters and one character."
+                );
                 return;
             }
 
@@ -75,35 +87,47 @@ export default function Login() {
             </div>
             <form onSubmit={register} className="formLogin">
                 <fieldset className="mb-3">
-                    <label htmlFor="email" className="form-label">
-                        Email address
-                    </label>
                     <input
                         type="email"
                         className="form-control"
                         id="email"
                         aria-describedby="emailHelp"
                         name="email"
-                        placeholder="Enter your email"
+                        placeholder="Email"
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
                     />
+                    <label htmlFor="email" className="form-label">
+                        Email
+                    </label>
                 </fieldset>
                 <fieldset className="mb-3">
-                    <label htmlFor="password" className="form-label">
-                        Password
-                    </label>
                     <input
                         type="password"
                         className="form-control"
                         id="password"
-                        placeholder="Enter your password"
+                        placeholder="Password"
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
+                    <label htmlFor="password" className="form-label">
+                        Password
+                    </label>
                 </fieldset>
-
-                <p>{passwordError}</p>
+                {error ? (
+                    <div>
+                        <p>Incorrect email or password. Please try again.</p>
+                    </div>
+                ) : (
+                    ""
+                )}
+                {password ? (
+                    <div className="passError">
+                        <p className="passError">{passwordError}</p>
+                    </div>
+                ) : (
+                    ""
+                )}
 
                 <button type="submit" className="btn btn-primary mb-3">
                     Login
