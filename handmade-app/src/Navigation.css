@@ -1,0 +1,72 @@
+.navigation {
+    display: grid;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+li,
+ul {
+    list-style-type: none;
+}
+.title {
+    text-transform: none;
+}
+.navBar1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+@media (max-width: 500px) {
+    .navBar1 {
+        display: grid;
+        place-items: center;
+        justify-content: space-around;
+        grid-template-areas:
+            "brand"
+            "shop"
+            "info";
+    }
+
+    .logoName {
+        grid-area: brand;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    .search {
+        grid-area: shop;
+    }
+}
+
+@media (max-width: 800px) {
+    .navBar1 {
+        display: grid;
+        place-items: center;
+        justify-content: space-around;
+        grid-template-areas:
+            "brand"
+            "info"
+            "shop";
+    }
+
+    .logoName {
+        grid-area: brand;
+    }
+
+    .info {
+        grid-area: info;
+    }
+
+    .search {
+        grid-area: shop;
+    }
+}

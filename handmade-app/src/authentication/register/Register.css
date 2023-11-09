@@ -1,0 +1,75 @@
+.formRegister {
+    max-width: 800px;
+    margin: 0 auto;
+    letter-spacing: 0.2em;
+}
+.createAccount {
+    display: grid;
+    place-items: center;
+    letter-spacing: 0.2em;
+}
+.form__input {
+    margin-bottom: 15px;
+    padding: 12px 14px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+}
+.btn {
+    background-color: black;
+    width: 630px;
+    height: 63px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+.form-label {
+    position: absolute;
+    bottom: calc(100% - 8px);
+    left: 10px;
+    padding: 0 5px;
+    line-height: normal;
+    color: black;
+    font-size: 12px;
+    opacity: 0;
+    background: rgba(239, 239, 239, 0);
+    pointer-events: none;
+    transform: translateY(3px);
+    transition: all 0.3s ease-in-out;
+}
+.form-control:not(:placeholder-shown) ~ .form-label {
+    opacity: 1;
+    background: #efefef;
+    transform: translateY(0);
+}
+.createTitle {
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.form-control {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 0;
+    border: 1px solid #cfcfcf;
+    width: 100%;
+    line-height: normal;
+    resize: none;
+    transition: border-color 0.1s ease-in-out;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.box {
+    margin-bottom: 15px;
+    padding: 12px 14px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid black;
+    position: relative;
+    height: 65px;
+}

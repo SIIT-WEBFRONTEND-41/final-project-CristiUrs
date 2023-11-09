@@ -1,0 +1,41 @@
+.deleteBtn {
+    height: 20px;
+    width: 50px;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.wallet_img {
+    width: 200px;
+    height: 300px;
+}
+.deleteBtn {
+    background-color: black;
+    width: 630px;
+    height: 48px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+.section {
+    display: flex;
+}
+.dialogBox {
+    width: 450px;
+    position: absolute;
+    background: lightgrey;
+}
+.wallet__colour {
+    text-align: center;
+}
+.lista {
+    text-align: center;
+    margin: 15px;
+}

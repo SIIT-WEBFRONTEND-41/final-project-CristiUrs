@@ -1,0 +1,7 @@
+.btn5 {
+    background-color: black;
+    width: 630px;
+    height: 48px;
+
+    transition: background-color 0.3s ease;
+}

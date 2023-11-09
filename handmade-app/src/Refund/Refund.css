@@ -1,0 +1,13 @@
+.about {
+    display: grid;
+    place-items: center;
+}
+
+p {
+    padding: 10px 80px;
+}
+.about_info {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 20px;
+}
