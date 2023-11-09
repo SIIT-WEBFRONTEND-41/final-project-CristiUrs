@@ -9,7 +9,7 @@
     letter-spacing: 0.2em;
 }
 
-.mb-3 {
+.box {
     margin-bottom: 15px;
     padding: 12px 14px;
     width: 100%;
@@ -19,7 +19,6 @@
     height: 65px;
 }
 .loginTitle {
-    font-size: 25px;
     text-transform: uppercase;
     padding: 15px;
 }
@@ -42,7 +41,7 @@
     left: 10px;
     padding: 0 5px;
     line-height: normal;
-    color: blue;
+    color: black;
     font-size: 12px;
     opacity: 0;
     background: rgba(239, 239, 239, 0);
@@ -61,7 +60,7 @@
 .btn {
     background-color: black;
     width: 630px;
-    height: 39px;
+    height: 63px;
     color: white;
     transition: background-color 0.3s ease;
 }

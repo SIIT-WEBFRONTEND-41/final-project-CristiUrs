@@ -2,7 +2,7 @@ import "./App.css";
 import Wallet from "./HandMade/Wallet";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Navigation from "./Navigation";
-import ItemDetails from "./HandMade/item-details/Item-details";
+
 import CreateItem from "./create-item/Create-item";
 import React, { useState } from "react";
 import ItemContextProvider from "./ItemContext";
@@ -13,13 +13,19 @@ import Wishlist from "./wishlist/Wishlist";
 import Footer from "./HandMade/Footer";
 import NavLogin from "./HandMade/NavLogin";
 import Bag from "./Products/bag/bag";
-import Pouch from "./Products/pouch/Pouch";
+
 import CardHolder from "./Products/cardHolder/CardHolder";
 import About from "./about/About";
 import { Item } from "./HandMade/Item";
 import ItemInfo from "./item-info/ItemInfo";
-import SoppingCart from "./sopping-cart/SoppingCart";
+import ShoppingCart from "./shopping-cart/ShoppingCart";
 import CartContextProvider from "./CartContext";
+import ItemDetails from "./HandMade/item-details/ItemDetails";
+import MyProfile from "./authentication/myprofile/MyProfile";
+import WalletFilter from "./Products/wallet/WalletFilter";
+import Accessories from "./Products/Accessories/Accessories";
+import Privacy from "./Privacy/Privacy";
+import Refund from "./Refund/Refund";
 
 function App() {
     return (
@@ -48,13 +54,21 @@ function App() {
                                 element={<CardHolder></CardHolder>}
                             ></Route>
                             <Route
+                                path="update/:id"
+                                element={<ItemDetails></ItemDetails>}
+                            ></Route>
+                            <Route
                                 path="/wallet"
-                                element={<Wallet></Wallet>}
+                                element={<WalletFilter></WalletFilter>}
                             ></Route>
                             <Route path="/bag" element={<Bag></Bag>}></Route>
                             <Route
-                                path="/pouch"
-                                element={<Pouch></Pouch>}
+                                path="/accessories"
+                                element={<Accessories></Accessories>}
+                            ></Route>
+                            <Route
+                                path="/myProfile"
+                                element={<MyProfile></MyProfile>}
                             ></Route>
                             <Route
                                 path="/create-item"
@@ -74,7 +88,15 @@ function App() {
                             ></Route>
                             <Route
                                 path="/cart"
-                                element={<SoppingCart></SoppingCart>}
+                                element={<ShoppingCart></ShoppingCart>}
+                            ></Route>
+                            <Route
+                                path="/privacy"
+                                element={<Privacy></Privacy>}
+                            ></Route>
+                            <Route
+                                path="/refund"
+                                element={<Refund></Refund>}
                             ></Route>
                             <Route
                                 path="*"

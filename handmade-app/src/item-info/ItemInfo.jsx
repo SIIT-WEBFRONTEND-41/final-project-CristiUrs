@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
-import { CartContext } from "../CartContext";
-
 import "./ItemInfo.css";
+import ItemForm from "../item-form/ItemForm";
+import Dialog from "../dialog/Dialog";
+import ItemDetails from "../HandMade/item-details/ItemDetails";
 
 export default function ItemInfo() {
     let { id } = useParams();
@@ -17,7 +17,6 @@ export default function ItemInfo() {
     const [showText2, setShowText2] = useState(false);
     const [buttonText2, setButtonText2] = useState("+");
     const [buttonText1, setButtonText1] = useState("+");
-    const { cart, setCart } = useContext(CartContext);
 
     const toggleText1 = () => {
         setShowText1(!showText1);
@@ -51,46 +50,55 @@ export default function ItemInfo() {
 
     return (
         <article className="item">
-            <div className="item_img">
-                <img src={item?.image} alt="" className="item_img" />
-            </div>
-            <div className="item_details">
-                <div className="wallet__name">
-                    <p className="wallet__name">{item?.name}</p>
-                </div>
+            {bearerToken ? (
+                <>
+                    <main>
+                        <div className="formTitle">
+                            <h3>Update or delete item</h3>
+                        </div>
+                        <ItemDetails></ItemDetails>
+                    </main>
+                </>
+            ) : (
+                <>
+                    <div className="item_img">
+                        <img src={item?.image} alt="" className="item_img" />
+                    </div>
+                    <div className="item_details">
+                        <div className="wallet__name">
+                            <p className="wallet__name">{item?.name}</p>
+                        </div>
 
-                <div>
-                    <span className="wallet__price">
-                        {item?.price}{" "}
-                        <span className="wallet__currency">
-                            {item?.currency}
-                        </span>
-                    </span>
-                </div>
-                <div>
-                    <h5>Detailed Description</h5>
-                    <button onClick={toggleText1}>{buttonText1}</button>
-                    {showText1 && <p>{item?.details}</p>}
-                </div>
+                        <div className="wallet__price ">
+                            <p className="wallet__price">
+                                {item?.price} &pound;
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Color:<span>{item?.colour}</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h5 className="title5">Detailed Description</h5>
+                            <button onClick={toggleText1}>{buttonText1}</button>
+                            {showText1 && <p>{item?.details}</p>}
+                        </div>
 
-                <div>
-                    <h5>Delivery & Returns </h5>
-                    <button onClick={toggleText2}>{buttonText2}</button>
-                    {showText2 && (
-                        <p>
-                            UK shipping is free over £150 and always tracked.
-                            International orders over £250 also include free
-                            shipping. UK returns are free of charge via
-                            Collect+, so if you change your mind or are not
-                            happy with your order, you may return it within 30
-                            days. International returns will incur a cost.
-                        </p>
-                    )}
-                </div>
-                <div className="wallet__btn">
-                    <button>Add to card</button>
-                </div>
-            </div>
+                        <div>
+                            <h5 className="title5">Delivery & Returns </h5>
+                            <button onClick={toggleText2}>{buttonText2}</button>
+                            {showText2 && (
+                                <p>
+                                    UK shipping is free over £150 and always
+                                    tracked. UK returns are free of charge via
+                                    Collect.
+                                </p>
+                            )}
+                        </div>
+                    </div>
+                </>
+            )}
         </article>
     );
 }

@@ -1,0 +1,15 @@
+.shopping {
+    display: grid;
+    place-items: center;
+}
+.list {
+    display: grid;
+    place-items: center;
+}
+.items {
+    display: flex;
+    align-items: center;
+}
+.title {
+    margin: 30px;
+}

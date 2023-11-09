@@ -1,11 +1,25 @@
 .wallet {
-    background-color: antiquewhite;
+    background-color: #efefef;
     border-radius: 10px;
 }
-.wallet__btn {
-    border: 1px solid red;
-}
-.img {
+
+.image {
     width: 200px;
     height: 300px;
+    margin-left: 5px;
+}
+.btn1 {
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    outline: none;
+    background-color: skyblue;
+}
+.wallet {
+    width: 250px;
+    padding: 20px;
+    height: 425px;
+}
+.wallet__name {
+    display: contents;
 }

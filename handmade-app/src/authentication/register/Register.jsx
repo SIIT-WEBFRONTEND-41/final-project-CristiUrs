@@ -7,6 +7,7 @@ export default function Register() {
     const [password, setPassword] = useState("");
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
+    const [address, setAddress] = useState("");
     const [passwordError, setPasswordError] = useState(null);
     const navigate = useNavigate();
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -18,6 +19,7 @@ export default function Register() {
             password,
             firstName,
             lastName,
+            address,
         };
 
         fetch("http://localhost:3004/register", {
@@ -71,39 +73,56 @@ export default function Register() {
 
     return (
         <main className="createAccount">
-            <div className="">
+            <div className="createTitle">
                 <h3>Register</h3>
             </div>
             <div>
                 <p>Please fill in the information below:</p>
             </div>
             <form onSubmit={register} className="formRegister">
-                <fieldset className="form__input">
-                    <label htmlFor="firstName">First Name:</label>
+                <fieldset className="box">
                     <input
                         type="text"
                         id="firstName"
+                        className="form-control"
                         placeholder="First name"
                         name="firstName"
                         value={firstName}
                         onChange={(event) => setFirstName(event.target.value)}
                     />
+                    <label htmlFor="firstName" className="form-label">
+                        First Name
+                    </label>
                 </fieldset>
-                <fieldset className="form__input">
-                    <label htmlFor="lastName">Last Name:</label>
+                <fieldset className="box">
                     <input
                         type="text"
                         id="lastName"
+                        className="form-control"
                         placeholder="Last name"
                         name="lastName"
                         value={lastName}
                         onChange={(event) => setLastName(event.target.value)}
                     />
-                </fieldset>
-                <fieldset className="form__input">
-                    <label htmlFor="email" className="form-label">
-                        Email address
+                    <label htmlFor="lastName" className="form-label">
+                        Last Name
                     </label>
+                </fieldset>
+                <fieldset className="box">
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="address"
+                        placeholder="Address"
+                        name="address"
+                        value={address}
+                        onChange={(event) => setAddress(event.target.value)}
+                    />
+                    <label htmlFor="address" className="form-label">
+                        Address
+                    </label>
+                </fieldset>
+                <fieldset className="box">
                     <input
                         type="email"
                         className="form-control"
@@ -114,11 +133,11 @@ export default function Register() {
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
                     />
-                </fieldset>
-                <fieldset className="form__input">
-                    <label htmlFor="password" className="form-label">
-                        Password
+                    <label htmlFor="email" className="form-label">
+                        Email address
                     </label>
+                </fieldset>
+                <fieldset className="box">
                     <input
                         type="password"
                         className="form-control"
@@ -127,11 +146,14 @@ export default function Register() {
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
+                    <label htmlFor="password" className="form-label">
+                        Password
+                    </label>
                 </fieldset>
 
                 {passwordError && <p>{passwordError}</p>}
 
-                <button type="submit" className="btn btn-primary form__input">
+                <button type="submit" className="btn btn-primary box">
                     Create my account
                 </button>
             </form>

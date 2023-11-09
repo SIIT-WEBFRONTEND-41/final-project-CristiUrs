@@ -7,7 +7,7 @@ export default function Dialog(props) {
         <div className="dialog">
             <div className="backdrop">
                 <h1>{name}</h1>
-                <p>
+                <p className="btn5">
                     <button className="buttonDialog" onClick={yesCb}>
                         Yes
                     </button>

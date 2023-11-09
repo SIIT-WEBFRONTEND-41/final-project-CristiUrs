@@ -22,15 +22,11 @@ export default function Wallet() {
     const { cart, setCart } = useContext(CartContext);
 
     const addToCart = (product) => {
-        console.log(product);
         setCart([...cart, product]);
     };
-    useEffect(() => {
-        console.log("Cart changed:", cart);
-    }, [cart]);
+    useEffect(() => {}, [cart]);
 
     function bookmark(product, wishlist) {
-        console.log(product);
         product.wishlist = !wishlist;
         const productId = product.id;
 
@@ -87,37 +83,32 @@ export default function Wallet() {
     if (error) {
         return (
             <section className="mr-px">
-                There has been a problem loading our movies. Try again later.
+                There has been a problem loading our products. Try again later.
             </section>
         );
     }
 
     return (
-        <main>
+        <main className="home">
             <header>
-                <nav className="navBar">
-                    <div className="logoName">
-                        <Link to="/">
-                            <h1>LionLeatherCraft</h1>
-                        </Link>
-                    </div>
+                <nav className="navBar2">
                     <div className="info">
-                        <Link to="/wallet">
-                            <span>Wallet</span>
+                        <Link to="/accessories">
+                            <span>Accessories</span>
                         </Link>
                         <Link to="/bag">
-                            <span>Bag</span>
-                        </Link>
-                        <Link to="/pouch">
-                            <span>Pouch</span>
+                            <span>Bags</span>
                         </Link>
                         <Link to="/cardHolder">
-                            <span>CardHolder</span>
+                            <span>Cards Holder</span>
+                        </Link>
+                        <Link to="/wallet">
+                            <span>Wallets</span>
                         </Link>
                     </div>
                     <div className="search">
-                        <SearchIcon></SearchIcon>
                         <input
+                            className="input1"
                             placeholder="Search for something"
                             onKeyUp={(event) =>
                                 setSearchTerm(
@@ -142,7 +133,7 @@ export default function Wallet() {
                 </nav>
             </header>
             {user?.user?.firstName && (
-                <h3 className="userLogin">Welcome, {user?.user?.firstName}!</h3>
+                <h1 className="userLogin">Welcome, {user?.user?.firstName}!</h1>
             )}
             <section className="wallet-container">
                 {wallets.map((product) => (

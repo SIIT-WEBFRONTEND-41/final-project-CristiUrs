@@ -16,37 +16,28 @@ export function Item(props) {
     return (
         <article className="wallet">
             <div className="wallet__card">
-                <div className="wallet_photo">
-                    <Link to={`products/${id}`}>
-                        <img src={image} alt="" className="img" />
-                    </Link>
+                <Link to={`products/${id}`}>
+                    <img src={image} alt="" className="image" />
+                </Link>
 
-                    <span
-                        className="svgHeart"
-                        onClick={() => bookmark(product, wishlist)}
-                    >
-                        {wishlist ? (
-                            <HeartFilled></HeartFilled>
-                        ) : (
-                            <HeartIcon></HeartIcon>
-                        )}
-                    </span>
-                </div>
-                <div className="wallet__info">
-                    <div className="wallet__name">
-                        <p className="wallet__name">{name}</p>
-                    </div>
+                <span
+                    className="svgHeart"
+                    onClick={() => bookmark(product, wishlist)}
+                >
+                    {wishlist ? (
+                        <HeartFilled></HeartFilled>
+                    ) : (
+                        <HeartIcon></HeartIcon>
+                    )}
+                </span>
+            </div>
+            <div className="wallet__info">
+                <p className="wallet__name">{name}</p>
+                <p className="wallet__price">{price} &pound; </p>
 
-                    <div>
-                        <span className="wallet__price">
-                            {price}
-                            <span className="wallet__currency">{currency}</span>
-                        </span>
-                    </div>
-                    <div className="wallet__btn">
-                        <button onClick={handleAddToCart}>Add to card</button>
-                    </div>
-                </div>
+                <button className="btn1 wallet__btn" onClick={handleAddToCart}>
+                    Add to card
+                </button>
             </div>
         </article>
     );

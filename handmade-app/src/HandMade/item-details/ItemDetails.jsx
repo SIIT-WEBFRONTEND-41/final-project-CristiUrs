@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Dialog from "../../dialog/Dialog";
-import ItemForm from "../../item-form/Item-form";
-import "./Item-details.css";
+import ItemForm from "../../item-form/ItemForm";
+import "./ItemDetails.css";
 import { ItemsContext } from "../../ItemContext";
 import { UserContext, getAccessToken } from "../../UserContext";
 
@@ -63,38 +63,42 @@ export default function ItemDetails() {
     }
 
     return (
-        <section>
-            {showDialog && (
-                <Dialog
-                    yesCb={deleteItem}
-                    noCb={hideDialog}
-                    name="Are you sure you want to remove the item?"
-                />
-            )}
+        <section className="section">
             <article className="wallet">
                 <div className="wallet__card">
                     <div className="wallet_photo">
                         <img src={item?.image} alt="" className="wallet_img" />
                     </div>
-                    <div className="wallet__name">
-                        <p className="wallet__name">{item?.name}</p>
-                    </div>
+                    <ul className="lista">
+                        <li>{item?.name}</li>
+                        <li>Colour:{item?.colour}</li>
+                        <li>{item?.price}&pound;</li>
+                    </ul>
 
-                    <div>
-                        <span className="wallet__price">
-                            {item?.price}{" "}
-                            <span className="wallet__currency">
-                                {item?.currency}
-                            </span>
-                        </span>
-                    </div>
+                    {/* <p className="wallet__name">{item?.name}</p>
+
+                    <p className="wallet__colour">
+                        Colour: <span>{item?.colour}</span>
+                    </p>
+
+                    <p className="wallet__price">{item?.price}&pound;</p> */}
                 </div>
             </article>
+            <div>
+                <ItemForm onSubmit={onSubmit} item={item}></ItemForm>
 
-            <ItemForm onSubmit={onSubmit} item={item}></ItemForm>
-            <button className="deleteBtn" onClick={showDeleteItem}>
-                Delete
-            </button>
+                <button className="deleteBtn" onClick={showDeleteItem}>
+                    Delete
+                </button>
+            </div>
+            {showDialog && (
+                <Dialog
+                    className="dialogBox"
+                    yesCb={deleteItem}
+                    noCb={hideDialog}
+                    name="Are you sure you want to remove the item?"
+                />
+            )}
         </section>
     );
 }

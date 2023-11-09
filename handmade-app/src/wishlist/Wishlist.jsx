@@ -6,17 +6,15 @@ import { ItemsContext } from "../ItemContext";
 
 import { CartContext } from "../CartContext";
 
+import "./Wishlist.css";
+
 export default function Wishlist() {
     const { wallets, setWallets } = useContext(ItemsContext);
     const { cart, setCart } = useContext(CartContext);
 
     const addToCart = (product) => {
-        console.log(product);
         setCart([...cart, product]);
     };
-    useEffect(() => {
-        console.log("Cart changed:", cart);
-    }, [cart]);
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
@@ -33,17 +31,20 @@ export default function Wishlist() {
     }
 
     return (
-        <section>
-            {wallets
-                .filter((product) => product.wishlist === true)
-                .map((product) => (
-                    <Item
-                        key={product.id}
-                        product={product}
-                        bookmark={bookmark}
-                        addToCart={addToCart}
-                    ></Item>
-                ))}
-        </section>
+        <main>
+            <h1 className="title">Wishlist</h1>
+            <section className="wallet-container">
+                {wallets
+                    .filter((product) => product.wishlist === true)
+                    .map((product) => (
+                        <Item
+                            key={product.id}
+                            product={product}
+                            bookmark={bookmark}
+                            addToCart={addToCart}
+                        ></Item>
+                    ))}
+            </section>
+        </main>
     );
 }

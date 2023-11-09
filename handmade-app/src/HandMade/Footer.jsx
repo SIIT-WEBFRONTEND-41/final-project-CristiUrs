@@ -3,6 +3,7 @@ import logo from "../Image/logo.jpg";
 import InstagramIcon from "../Icons/InstagramIcon";
 import FacebookIcon from "../Icons/FacebookIcon";
 import YoutubeIcon from "../Icons/Youtube";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -41,36 +42,43 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
+                    <div className="copy ">
+                        <span>
+                            © 2023 <a href="/">Lion Leather Craft</a>
+                        </span>
+                    </div>
                 </div>
                 <div className="footer-info">
                     <h3>Information</h3>
                     <ul className="ul-info">
-                        <li>Contact Us</li>
-                        <li>Customer Service</li>
-                        <li>Terms & Conditions</li>
-                        <li>Privacy & Cookies</li>
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link to="privacy">Privacy & Cookies</Link>
+                        </li>
+                        <li>
+                            <Link to="/refund">Refund policy</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer-shop">
                     <h3>Shop</h3>
                     <ul className="ul-shop">
-                        <li>Wallets</li>
-                        <li>Pouches</li>
-                        <li>Bags</li>
-                        <li>Card Holder</li>
-                    </ul>
-                </div>
-            </div>
+                        <li>
+                            <Link to="/accessories">Accessories</Link>
+                        </li>
+                        <li>
+                            <Link to="bag">Bags</Link>
+                        </li>
+                        <li>
+                            <Link to="cardHolder">Cards Holder</Link>
+                        </li>
 
-            <div className="footer-copy footer-up">
-                <div className="copy ">
-                    <span>
-                        © 2023 <a href="/">Lion Leather Craft</a>
-                    </span>
-                </div>
-                <div className="terms ">
-                    <span>Terms & Conditions</span>
-                    <span>Privacy & Cookies</span>
+                        <li>
+                            <Link to="wallet">Wallets</Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>

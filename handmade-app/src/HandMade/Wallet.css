@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .wallet-container {
     display: flex;
     flex-wrap: wrap;
@@ -5,10 +10,15 @@
     justify-content: space-evenly;
 }
 
+.input1 {
+    height: 25px;
+    margin: 0 10px;
+    background-color: #efefef;
+    text-align: center;
+}
 .wallet__card {
     position: relative;
     display: inline-grid;
-    margin: 15px;
 }
 .svgHeart {
     position: absolute;
@@ -21,12 +31,13 @@
     text-align: center;
 }
 
-.navBar {
+.navBar2 {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: antiquewhite;
-    border-radius: 10px;
+    background-color: #efefef;
+
+    margin-bottom: 20px;
 }
 
 .info {
@@ -51,21 +62,17 @@ a {
 }
 .userLogin {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 500px) {
-    .navBar {
+    .navBar2 {
         display: grid;
         place-items: center;
         justify-content: space-around;
         grid-template-areas:
-            "brand"
             "shop"
             "info";
-    }
-
-    .logoName {
-        grid-area: brand;
     }
 
     .info {
@@ -78,18 +85,13 @@ a {
 }
 
 @media (max-width: 800px) {
-    .navBar {
+    .navBar2 {
         display: grid;
         place-items: center;
         justify-content: space-around;
         grid-template-areas:
-            "brand"
             "info"
             "shop";
-    }
-
-    .logoName {
-        grid-area: brand;
     }
 
     .info {
@@ -112,9 +114,15 @@ a {
     line-height: 1em;
     font-weight: 500;
     white-space: nowrap;
-    min-width: 15px;
+    min-width: 11px;
     text-align: center;
     background: red;
     color: #fff;
     border-radius: 12px;
+}
+.mr-px {
+    text-align: center;
+}
+.home {
+    margin-bottom: 200px;
 }

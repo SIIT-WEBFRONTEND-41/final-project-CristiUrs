@@ -3,21 +3,10 @@ import { useContext, useEffect, useState } from "react";
 import { Item } from "../../HandMade/Item";
 
 import { ItemsContext } from "../../ItemContext";
+import "./Accessories.css";
 
-import { CartContext } from "../../CartContext";
-import "./CardHolder.css";
-
-export default function CardHolder() {
+export default function Accessories() {
     const { wallets, setWallets } = useContext(ItemsContext);
-    const { cart, setCart } = useContext(CartContext);
-
-    const addToCart = (product) => {
-        console.log(product);
-        setCart([...cart, product]);
-    };
-    useEffect(() => {
-        console.log("Cart changed:", cart);
-    }, [cart]);
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
@@ -35,19 +24,18 @@ export default function CardHolder() {
     }
 
     return (
-        <main className="card">
-            <h1 className="title">Card Holder</h1>
+        <main className="accessories">
+            <h1 className="title">Accessories</h1>
             <section className="wallet-container">
                 {wallets
                     .filter((product) =>
-                        product.name.toLowerCase().includes("card")
+                        product.name.toLowerCase().includes("accessories")
                     )
                     .map((product) => (
                         <Item
                             key={product.id}
                             product={product}
                             bookmark={bookmark}
-                            addToCart={addToCart}
                         ></Item>
                     ))}
             </section>

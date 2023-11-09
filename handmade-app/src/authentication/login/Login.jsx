@@ -49,7 +49,7 @@ export default function Login() {
 
             if (password.length < 8) {
                 setPasswordError(
-                    "Password must be at least 8 characters and one character."
+                    "Your password must contain at least 7 characters and a symbol."
                 );
                 return;
             }
@@ -86,7 +86,7 @@ export default function Login() {
                 <p>Please enter your e-mail and password:</p>
             </div>
             <form onSubmit={register} className="formLogin">
-                <fieldset className="mb-3">
+                <fieldset className="box">
                     <input
                         type="email"
                         className="form-control"
@@ -101,7 +101,7 @@ export default function Login() {
                         Email
                     </label>
                 </fieldset>
-                <fieldset className="mb-3">
+                <fieldset className="box">
                     <input
                         type="password"
                         className="form-control"
@@ -129,7 +129,7 @@ export default function Login() {
                     ""
                 )}
 
-                <button type="submit" className="btn btn-primary mb-3">
+                <button type="submit" className="btn btn-primary box">
                     Login
                 </button>
             </form>
