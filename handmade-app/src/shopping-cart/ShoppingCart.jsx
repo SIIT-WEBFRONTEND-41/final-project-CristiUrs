@@ -70,7 +70,7 @@ export default function SoppingCart() {
                             </li>
                         ))}
                     </ul>
-                    <p>Total is: {price} &pound;</p>
+                    <h3>Total is: {price} &pound;</h3>
                 </section>
             ) : (
                 <div>

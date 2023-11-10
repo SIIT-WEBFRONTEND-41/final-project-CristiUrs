@@ -4,6 +4,7 @@ import { Item } from "../../HandMade/Item";
 
 import { ItemsContext } from "../../ItemContext";
 import "./Accessories.css";
+import img from "../../Image/aleksandrs-karevs-f43Ubfx3ooo-unsplash.jpg";
 
 export default function Accessories() {
     const { wallets, setWallets } = useContext(ItemsContext);
@@ -25,7 +26,11 @@ export default function Accessories() {
 
     return (
         <main className="accessories">
-            <h1 className="title">Accessories</h1>
+            <div className="container">
+                <img src={img} alt="" className="imgTitle" />
+                <h1 className="titleCard">Accessories</h1>
+            </div>
+
             <section className="wallet-container">
                 {wallets
                     .filter((product) =>

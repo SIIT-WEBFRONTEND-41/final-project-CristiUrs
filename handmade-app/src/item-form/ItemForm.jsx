@@ -15,18 +15,24 @@ export default function ItemForm(props) {
     const { wallets } = useContext(ItemsContext);
     const [items, setItems] = useState(null);
 
+    const defaultImageUrl = "https://picsum.photos/200/300";
+    const defaultItem = "New item";
+    const defaultPrice = "50";
+    const defaultColour = "black";
+    const defaultDetails = "Our new product, handmade here in the UK.";
+
     function handleSubmit(event) {
         event.preventDefault();
         const { image, name, price, colour, details } = event.target;
         console.log(event);
         const updatedItem = {
             ...items,
-            image: image?.value,
-            name: name?.value,
-            price: price?.value,
+            image: image?.value || defaultImageUrl,
+            name: name?.value || defaultItem,
+            price: price?.value || defaultPrice,
 
-            colour: colour?.value,
-            delails: details?.value,
+            colour: colour?.value || defaultColour,
+            delails: details?.value || defaultDetails,
         };
 
         fetch(`http://localhost:3004/products/${id}`, {
@@ -61,7 +67,7 @@ export default function ItemForm(props) {
 
     return (
         <form onSubmit={handleSubmit} className="formItem">
-            <fieldset className="mb-3">
+            <fieldset className="mb-3 box">
                 <label htmlFor="url">URL:</label>
                 <input
                     id="url"
@@ -71,7 +77,7 @@ export default function ItemForm(props) {
                 />
             </fieldset>
 
-            <fieldset className="mb-3">
+            <fieldset className="mb-3 box">
                 <label htmlFor="name">Name</label>
                 <input
                     id="name"
@@ -81,24 +87,29 @@ export default function ItemForm(props) {
                 />
             </fieldset>
 
-            <fieldset className="mb-3">
+            <fieldset className="mb-3 box">
                 <label htmlFor="price">Price</label>
                 <input
                     id="price"
                     type="number"
                     name="price"
+                    min={5}
+                    max={500}
                     defaultValue={items?.price}
                 />
             </fieldset>
 
             <fieldset className="mb-3">
                 <label htmlFor="colour">Colour</label>
-                <input
-                    id="colour"
-                    type="text"
-                    name="colour"
-                    defaultValue={items?.colour}
-                />
+                <select id="colour" defaultValue={items?.colour}>
+                    <option value="black">black</option>
+                    <option value="blue">blue</option>
+                    <option value="brown">brown</option>
+                    <option value="green">green</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="yellow">yellow</option>
+                </select>
             </fieldset>
 
             <fieldset className="mb-3">

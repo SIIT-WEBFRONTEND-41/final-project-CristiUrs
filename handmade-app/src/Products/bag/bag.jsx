@@ -6,6 +6,8 @@ import { ItemsContext } from "../../ItemContext";
 
 import "./bag.css";
 
+import img from "../../Image/alvaro-serrano-pFLNV4gkXsc-unsplash.jpg";
+
 export default function Bag() {
     const { wallets, setWallets } = useContext(ItemsContext);
 
@@ -27,7 +29,11 @@ export default function Bag() {
 
     return (
         <main className="bag">
-            <h1 className="title">Bag</h1>
+            <div className="container">
+                <img src={img} alt="" className="imgTitle" />
+                <h1 className="titleCard">Bags</h1>
+            </div>
+
             <section className="wallet-container">
                 {wallets
                     .filter((product) =>

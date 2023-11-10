@@ -37,7 +37,7 @@
     padding: 15px;
     background-color: #efefef;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .info {
@@ -62,7 +62,9 @@ a {
 }
 .userLogin {
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 19px;
+    font-family: monospace;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 500px) {
@@ -124,5 +126,28 @@ a {
     text-align: center;
 }
 .home {
-    margin-bottom: 200px;
+    margin-bottom: 140px;
+}
+
+.container {
+    position: relative;
+}
+
+.logo-img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descriere-text {
+    position: absolute;
+    top: 90%;
+    font-family: cursive;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 30px;
 }

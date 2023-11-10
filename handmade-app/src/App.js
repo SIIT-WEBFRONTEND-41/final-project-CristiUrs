@@ -67,7 +67,7 @@ function App() {
                                 element={<Accessories></Accessories>}
                             ></Route>
                             <Route
-                                path="/myProfile"
+                                path="/myprofile"
                                 element={<MyProfile></MyProfile>}
                             ></Route>
                             <Route

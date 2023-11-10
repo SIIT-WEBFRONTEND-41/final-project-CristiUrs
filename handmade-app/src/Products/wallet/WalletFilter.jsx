@@ -4,6 +4,7 @@ import { Item } from "../../HandMade/Item";
 
 import { ItemsContext } from "../../ItemContext";
 import "./WalletFilter.css";
+import img from "../../Image/DSC09483_800x.webp";
 
 export default function WalletFilter() {
     const { wallets, setWallets } = useContext(ItemsContext);
@@ -25,7 +26,11 @@ export default function WalletFilter() {
 
     return (
         <main className="walletFillter">
-            <h1 className="title">Wallet</h1>
+            <div className="container">
+                <img src={img} alt="" className="imgTitle" />
+                <h1 className="titleCard">Wallets</h1>
+            </div>
+
             <section className="wallet-container">
                 {wallets
                     .filter((product) =>

@@ -47,10 +47,8 @@ export default function Login() {
         function validatePassword(password) {
             const specialCharacters = ["*", "#", "!", "@"];
 
-            if (password.length < 8) {
-                setPasswordError(
-                    "Your password must contain at least 7 characters and a symbol."
-                );
+            if (password.length <= 7) {
+                setPasswordError("Your password must have  7 characters.");
                 return;
             }
 
@@ -79,6 +77,7 @@ export default function Login() {
 
     return (
         <main className="login">
+            <img></img>
             <div className="loginTitle">
                 <h1>Login</h1>
             </div>
@@ -106,7 +105,7 @@ export default function Login() {
                         type="password"
                         className="form-control"
                         id="password"
-                        placeholder="Password"
+                        placeholder="Enter your password"
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
@@ -129,7 +128,7 @@ export default function Login() {
                     ""
                 )}
 
-                <button type="submit" className="btn btn-primary box">
+                <button type="submit" className="btn box">
                     Login
                 </button>
             </form>

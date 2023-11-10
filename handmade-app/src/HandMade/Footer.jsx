@@ -21,7 +21,7 @@ export default function Footer() {
                                     href="https://www.facebook.com/lionleathercraftuk"
                                     target="_blank"
                                 >
-                                    <FacebookIcon></FacebookIcon>
+                                    <FacebookIcon className="svg"></FacebookIcon>
                                 </a>
                             </li>
                             <li>

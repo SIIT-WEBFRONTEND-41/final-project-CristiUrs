@@ -99,10 +99,11 @@
     },
     {
       "email": "bbb@gmail.com",
-      "password": "$2a$10$LQIL8RSQJqdf4keyWfKVh.mNf5L.pF.0p4wedu6yjDqeFmkwCWDEK",
-      "firstName": "cris",
-      "lastName": "cristi",
-      "id": 18
+      "password": "$2a$10$t9//Fg9Opucbv6ozOrugK.ERwMJjj4py2nGKcqUPMvm6hkSgQDOyu",
+      "firstName": "Ursulescu",
+      "lastName": "Cristian",
+      "id": 18,
+      "address": "Bucuresti, sec. 4"
     },
     {
       "email": "aaa@gmail.com",
@@ -111,6 +112,30 @@
       "lastName": "Urs",
       "address": "Buc, sector 4",
       "id": 19
+    },
+    {
+      "email": "cristi@gmail.com",
+      "password": "$2a$10$4XaCB0VVxaHDI6V3xmbQBuKDgddMOhPOvSFjMTxT2ByLHb75do0SC",
+      "firstName": "Cristian",
+      "lastName": "Ursulescu",
+      "address": "Bucuresti",
+      "id": 20
+    },
+    {
+      "email": "cristian@gmail.com",
+      "password": "$2a$10$R7KVfolsxDrTThR.3pbG1u.rUDFNzWwVofFLMahVHInJg9EVvxMnS",
+      "firstName": "Cristi",
+      "lastName": "Urs",
+      "address": "Buc str Olten",
+      "id": 21
+    },
+    {
+      "email": "cristi56@gmail.com",
+      "password": "$2a$10$lLhTyT4vAn5GcAITwEruAOingOUt71ZAcciNs6dRqv4Cb30VBr8au",
+      "firstName": "Cristian",
+      "lastName": "Ursulescu",
+      "address": "Buc sec4",
+      "id": 22
     }
   ],
   "products": [
@@ -130,7 +155,7 @@
       "name": "Bag Rolltop",
       "price": "60",
       "wishlist": false,
-      "colour": "blue",
+      "colour": "red",
       "details": "The Rolltop is the most versatile leather bag you can own.",
       "delails": "The Rolltop is the most versatile leather bag you can own."
     },
@@ -138,19 +163,21 @@
       "id": 8,
       "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937784/Images/ocnaj0fjmdxezwnwszjd.jpg",
       "name": "Bag Tote",
-      "price": 55,
+      "price": "55",
       "wishlist": false,
       "colour": "brown",
-      "details": "The Tote is the most versatile leather bag you can own."
+      "details": "The Tote is the most versatile leather bag you can own.",
+      "delails": "The Tote is the most versatile leather bag you can own."
     },
     {
       "id": 9,
-      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937780/Images/nlo2bfwhpkocyxkljnzx.jpg",
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/wfsek3nfweor5mjcrdx8.jpg",
       "name": "Bag Gote",
-      "price": 65,
+      "price": "65",
       "wishlist": false,
       "colour": "brown",
-      "details": "The Gote is the most versatile leather bag you can own."
+      "details": "The Gote is the most versatile leather bag you can own.",
+      "delails": "The Gote is the most versatile leather bag you can own."
     },
     {
       "id": 10,
@@ -183,12 +210,13 @@
     },
     {
       "id": 13,
-      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/wfsek3nfweor5mjcrdx8.jpg",
-      "name": "Bag Zote",
-      "price": 120,
+      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/bs3tcyaem1mu2hzwhhpc.jpg",
+      "name": "Zote",
+      "price": "120",
       "wishlist": false,
       "colour": "black-purple",
-      "details": "Meet the Zote bag, our new brown leather zipped backpack, handmade here in the UK. "
+      "details": "Meet the Zote bag, our new brown leather zipped backpack, handmade here in the UK. ",
+      "delails": "Meet the Zote bag, our new brown leather zipped backpack, handmade here in the UK. "
     },
     {
       "id": 14,
@@ -222,7 +250,7 @@
       "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/lp28rukasfelodwnfauf.jpg",
       "name": "Card Holder Zutu",
       "price": 20,
-      "wishlist": false,
+      "wishlist": true,
       "colour": "brown-black",
       "details": "Our Zutu wallet is a classic. Made in England just a few miles from our tannery, it suits those with a little more to carry than our Cardholder can manage."
     },
@@ -231,7 +259,7 @@
       "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937781/Images/yo4sdzz3fzwvgg0jqw4c.png",
       "name": "Wallet Laten",
       "price": 60,
-      "wishlist": false,
+      "wishlist": true,
       "colour": "brown",
       "details": "A beautiful Laten wallet with one pocket on the outside, and two pockets on the inside along with a spring loaded brass money clip."
     },
@@ -240,7 +268,7 @@
       "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937773/Images/umwald5cb1pdhcw6w7h6.jpg",
       "name": "Wallet Maddix",
       "price": 50,
-      "wishlist": false,
+      "wishlist": true,
       "colour": "russet",
       "details": "A beautiful Maddix wallet with one pocket on the outside, and two pockets on the inside along with a spring loaded brass money clip."
     },
@@ -549,12 +577,20 @@
       "id": 55
     },
     {
-      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937776/Images/vy0at7godpda112rwf78.jpg",
-      "name": "sdfhjsdf",
-      "price": "20",
-      "colour": "blue",
-      "delails": "asdasdasd",
-      "id": 56
+      "image": "https://picsum.photos/200/300",
+      "name": "New item",
+      "price": "35",
+      "colour": "green",
+      "delails": "Our new product, handmade here in the UK.",
+      "id": 61
+    },
+    {
+      "image": "https://picsum.photos/200/300",
+      "name": "New item",
+      "price": "25",
+      "colour": "brown",
+      "delails": "sdfsdf",
+      "id": 62
     }
   ]
 }

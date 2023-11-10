@@ -43,8 +43,8 @@ export default function Register() {
         function validatePassword(password) {
             const specialCharacters = ["*", "#", "!", "@"];
 
-            if (password <= 8) {
-                setPasswordError("Password must be at least 8 characters.");
+            if (password.length <= 7) {
+                setPasswordError("Your password must have  7 characters.");
                 return;
             }
 
@@ -60,7 +60,7 @@ export default function Register() {
 
             if (!hasSpecialCharacters) {
                 setPasswordError(
-                    "Your password must have at least one character.",
+                    "Password must have at least one character.",
                     specialCharacters
                 );
             } else {
@@ -151,7 +151,7 @@ export default function Register() {
                     </label>
                 </fieldset>
 
-                {passwordError && <p>{passwordError}</p>}
+                {password && <p className="passError">{passwordError}</p>}
 
                 <button type="submit" className="btn btn-primary box">
                     Create my account

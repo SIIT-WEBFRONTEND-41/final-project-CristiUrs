@@ -4,6 +4,7 @@ import ItemForm from "../item-form/ItemForm";
 import { UserContext } from "../UserContext";
 import "./Create-item.css";
 import { ItemsContext } from "../ItemContext";
+import img from "../Image/istockphoto-471217520-1024x1024.jpg";
 
 export default function CreateItem() {
     const [success, setSuccess] = useState(false);
@@ -29,8 +30,9 @@ export default function CreateItem() {
 
     return (
         <section>
-            <div className="message">
-                <h1>Create a new item</h1>
+            <div className="container">
+                <img src={img} alt="" className="imgTitle" />
+                <h1 className="titleCard">Create a new item</h1>
             </div>
             {success && (
                 <p className="message">

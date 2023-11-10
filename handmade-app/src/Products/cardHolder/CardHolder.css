@@ -4,9 +4,26 @@
     gap: 20px;
     justify-content: space-evenly;
 }
-.title {
+.titleCard {
     text-align: center;
+
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 .card {
-    margin-bottom: 200px;
+    margin-bottom: 140px;
+}
+.imgTitle {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
 }

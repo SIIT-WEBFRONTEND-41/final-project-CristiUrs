@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Navigation.css";
 import { useContext } from "react";
 import { UserContext } from "./UserContext";
+import Navbar from "./navbar/Navbar";
 
 export default function Navigation() {
     const { user } = useContext(UserContext);
@@ -36,6 +37,10 @@ export default function Navigation() {
                     <>
                         <li className="navbarItem">
                             <Link to="/create-item">Create Item</Link>
+                        </li>
+
+                        <li className="navbarItem">
+                            <Link to="myprofile">Myprofile</Link>
                         </li>
 
                         <li className="navbarItem">

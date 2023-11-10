@@ -74,14 +74,6 @@ export default function ItemDetails() {
                         <li>Colour:{item?.colour}</li>
                         <li>{item?.price}&pound;</li>
                     </ul>
-
-                    {/* <p className="wallet__name">{item?.name}</p>
-
-                    <p className="wallet__colour">
-                        Colour: <span>{item?.colour}</span>
-                    </p>
-
-                    <p className="wallet__price">{item?.price}&pound;</p> */}
                 </div>
             </article>
             <div>

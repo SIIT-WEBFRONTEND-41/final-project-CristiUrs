@@ -11,6 +11,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
 import { CartContext } from "../CartContext";
+import Navbar from "../navbar/Navbar";
+import logo3 from "../Image/5450a0af-9076-4e7d-9096-2a11bb88e01d.webp";
 
 export default function Wallet() {
     const [products, setProducts] = useState([]);
@@ -133,8 +135,15 @@ export default function Wallet() {
                 </nav>
             </header>
             {user?.user?.firstName && (
-                <h1 className="userLogin">Welcome, {user?.user?.firstName}!</h1>
+                <p className="userLogin">Welcome, {user?.user?.firstName}!</p>
             )}
+            <div className="container">
+                <img src={logo3} className="logo-img"></img>
+                <p className="descriere-text">
+                    Step into the world of LION LEATHER CRAFT!
+                </p>
+            </div>
+
             <section className="wallet-container">
                 {wallets.map((product) => (
                     <Item

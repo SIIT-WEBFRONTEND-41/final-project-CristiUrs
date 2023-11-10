@@ -3,6 +3,7 @@
     margin: 0 auto;
     letter-spacing: 0.2em;
 }
+
 .login {
     display: grid;
     place-items: center;
@@ -11,12 +12,11 @@
 
 .box {
     margin-bottom: 15px;
-    padding: 12px 14px;
-    width: 100%;
-    background: transparent;
+    padding: 6px 8px;
+
     border: 1px solid black;
     position: relative;
-    height: 65px;
+    height: 50px;
 }
 .loginTitle {
     text-transform: uppercase;
@@ -55,12 +55,14 @@
     transform: translateY(0);
 }
 .passError {
-    width: 650px;
+    width: 670px;
+    color: red;
+    margin-bottom: 15px;
 }
 .btn {
     background-color: black;
-    width: 630px;
-    height: 63px;
+    width: 670px;
+    height: 55px;
     color: white;
     transition: background-color 0.3s ease;
 }
