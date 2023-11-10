@@ -81,13 +81,23 @@ export default function ItemInfo() {
                         </div>
                         <div className="details">
                             <h5 className="title5">Detailed Description</h5>
-                            <button onClick={toggleText1}>{buttonText1}</button>
+                            <button
+                                className="btnDetails"
+                                onClick={toggleText1}
+                            >
+                                {buttonText1}
+                            </button>
                             {showText1 && <p>{item?.details}</p>}
                         </div>
 
                         <div className="details">
                             <h5 className="title5">Delivery & Returns </h5>
-                            <button onClick={toggleText2}>{buttonText2}</button>
+                            <button
+                                className="btnDetails"
+                                onClick={toggleText2}
+                            >
+                                {buttonText2}
+                            </button>
                             {showText2 && (
                                 <p>
                                     UK shipping is free over £150 and always

@@ -14,7 +14,7 @@ export function Item(props) {
     };
 
     return (
-        <article className="wallet">
+        <article className="wallet cartItem">
             <div className="wallet__card">
                 <Link to={`products/${id}`}>
                     <img src={image} alt="" className="image" />

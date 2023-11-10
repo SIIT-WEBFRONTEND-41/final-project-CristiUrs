@@ -92,7 +92,7 @@ export default function Wallet() {
 
     return (
         <main className="home">
-            <header>
+            <header className="footer2">
                 <nav className="navBar2">
                     <div className="info">
                         <Link to="/accessories">

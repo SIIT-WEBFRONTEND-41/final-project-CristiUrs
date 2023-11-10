@@ -250,7 +250,7 @@
       "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/lp28rukasfelodwnfauf.jpg",
       "name": "Card Holder Zutu",
       "price": 20,
-      "wishlist": true,
+      "wishlist": false,
       "colour": "brown-black",
       "details": "Our Zutu wallet is a classic. Made in England just a few miles from our tannery, it suits those with a little more to carry than our Cardholder can manage."
     },
@@ -295,7 +295,7 @@
       "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937784/Images/mstx7jsi3iep0ndrldnu.png",
       "name": "Wallet Dulu",
       "price": 70,
-      "wishlist": false,
+      "wishlist": true,
       "colour": "red",
       "details": "A beautiful Dulu wallet with one pocket on the outside, and two pockets on the inside along with a spring loaded brass money clip."
     },
