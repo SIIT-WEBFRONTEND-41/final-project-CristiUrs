@@ -1,5 +1,5 @@
-.formItem {
-    max-width: 800px;
+.form_create {
+    max-width: 670px;
     margin: 0 auto;
     letter-spacing: 0.2em;
     display: grid;
@@ -8,7 +8,6 @@
 .login {
     display: grid;
     place-items: center;
-    letter-spacing: 0.2em;
 }
 
 .mb-3 {
@@ -17,12 +16,29 @@
     width: 100%;
     background: transparent;
     border: 1px solid black;
+    color: black;
 }
 .formTitle {
-    font-size: 25px;
-    text-transform: uppercase;
+    font-size: 20px;
+
     padding: 15px;
 }
 .message {
     text-align: center;
+}
+.btn5 {
+    background-color: black;
+    width: 670px;
+    height: 55px;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+.title_create {
+    text-align: center;
+    padding: 25px;
 }

@@ -3,14 +3,13 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
 import "./ItemInfo.css";
-import ItemForm from "../item-form/ItemForm";
-import Dialog from "../dialog/Dialog";
+
 import ItemDetails from "../HandMade/item-details/ItemDetails";
 
 export default function ItemInfo() {
     let { id } = useParams();
     const [item, setItem] = useState(null);
-    const [showDialog, setShowDialog] = useState(false);
+
     const { wallets } = useContext(ItemsContext);
     const { user } = useContext(UserContext);
     const [showText1, setShowText1] = useState(false);
@@ -27,7 +26,6 @@ export default function ItemInfo() {
         setButtonText2(showText2 ? "+" : "-");
     };
 
-    const navigate = useNavigate();
     const bearerToken = user?.accessToken || getAccessToken();
 
     useEffect(() => {
@@ -66,12 +64,12 @@ export default function ItemInfo() {
                     </div>
                     <div className="item_details">
                         <div className="wallet__name">
-                            <p className="wallet__name">{item?.name}</p>
+                            <p className="wallet__name">Name: {item?.name}</p>
                         </div>
 
                         <div className="wallet__price ">
                             <p className="wallet__price">
-                                {item?.price} &pound;
+                                Price: {item?.price} &pound;
                             </p>
                         </div>
                         <div>

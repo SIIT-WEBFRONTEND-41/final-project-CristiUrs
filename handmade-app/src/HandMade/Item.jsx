@@ -1,13 +1,12 @@
 import HeartIcon from "../Icons/HeartIcon";
 import HeartFilled from "../Icons/HeartFilledIcon";
-import ImageSvg from "../Icons/WalletIcon";
+
 import { Link } from "react-router-dom";
 import "./Item.css";
-import { useEffect, useState } from "react";
 
 export function Item(props) {
     const { product, bookmark, addToCart } = props;
-    const { id, image, name, price, currency, wishlist, details } = product;
+    const { id, image, name, price, wishlist } = product;
 
     const handleAddToCart = () => {
         addToCart(product);

@@ -70,9 +70,11 @@ export default function ItemDetails() {
                         <img src={item?.image} alt="" className="wallet_img" />
                     </div>
                     <ul className="lista">
-                        <li>{item?.name}</li>
-                        <li>Colour:{item?.colour}</li>
-                        <li>{item?.price}&pound;</li>
+                        <li className="listInfo">Name: {item?.name}</li>
+                        <li className="listInfo">Colour: {item?.colour}</li>
+                        <li className="listInfo">
+                            Price: {item?.price}&pound;
+                        </li>
                     </ul>
                 </div>
             </article>

@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext } from "../UserContext";
 import { CartContext } from "../CartContext";
-import { Item } from "../HandMade/Item";
+
 import "./ShoppingCart.css";
 
 export default function SoppingCart() {
@@ -47,18 +47,19 @@ export default function SoppingCart() {
             <h1 className="title">Shopping Cart</h1>
             {cart.length > 0 ? (
                 <section className="wallet-container">
-                    <ul className="items">
+                    <div className="container_items">
                         {cart.map((product) => (
-                            <li className="list" key={product.id}>
+                            <li className="list_shopping" key={product.id}>
                                 <img
                                     src={product.image}
                                     alt=""
-                                    width="50px"
-                                    height="50px"
+                                    width="100px"
+                                    height="100px"
                                 />
                                 <p>{product.name}</p>
 
                                 <button
+                                    className="btn_remove"
                                     onClick={() => removeFromCart(product.id)}
                                 >
                                     Remove
@@ -69,8 +70,10 @@ export default function SoppingCart() {
                                 </div>
                             </li>
                         ))}
-                    </ul>
-                    <h3>Total is: {price} &pound;</h3>
+                    </div>
+                    <div className="total_price">
+                        <h3>Total is: {price} &pound;</h3>
+                    </div>
                 </section>
             ) : (
                 <div>

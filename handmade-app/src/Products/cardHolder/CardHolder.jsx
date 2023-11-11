@@ -13,12 +13,8 @@ export default function CardHolder() {
     const { cart, setCart } = useContext(CartContext);
 
     const addToCart = (product) => {
-        console.log(product);
         setCart([...cart, product]);
     };
-    useEffect(() => {
-        console.log("Cart changed:", cart);
-    }, [cart]);
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;

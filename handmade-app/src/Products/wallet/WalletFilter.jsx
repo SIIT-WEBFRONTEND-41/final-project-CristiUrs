@@ -5,9 +5,16 @@ import { Item } from "../../HandMade/Item";
 import { ItemsContext } from "../../ItemContext";
 import "./WalletFilter.css";
 import img from "../../Image/DSC09483_800x.webp";
+import { CartContext } from "../../CartContext";
 
 export default function WalletFilter() {
     const { wallets, setWallets } = useContext(ItemsContext);
+
+    const { cart, setCart } = useContext(CartContext);
+
+    const addToCart = (product) => {
+        setCart([...cart, product]);
+    };
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
@@ -41,6 +48,7 @@ export default function WalletFilter() {
                             key={product.id}
                             product={product}
                             bookmark={bookmark}
+                            addToCart={addToCart}
                         ></Item>
                     ))}
             </section>

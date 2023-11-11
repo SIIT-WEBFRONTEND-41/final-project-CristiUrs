@@ -2,7 +2,6 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Navigation.css";
 import { useContext } from "react";
 import { UserContext } from "./UserContext";
-import Navbar from "./navbar/Navbar";
 
 export default function Navigation() {
     const { user } = useContext(UserContext);
@@ -10,7 +9,7 @@ export default function Navigation() {
 
     function logout() {
         localStorage.removeItem("access_token");
-        navigate("/login");
+        navigate("/");
         window.location.reload();
     }
 
@@ -21,14 +20,13 @@ export default function Navigation() {
                     <Link to="/">Home</Link>
                 </li>
 
-                <li className="navbarItem">
-                    <Link to="/" className="title">
-                        LionLeatherCraft
-                    </Link>
-                </li>
-
                 {!user?.user ? (
                     <>
+                        <li className="navbarItem">
+                            <Link to="/" className="title">
+                                Lion Leather Craft
+                            </Link>
+                        </li>
                         <li className="navbarItem">
                             <Link to="/login">Account</Link>
                         </li>
@@ -37,6 +35,11 @@ export default function Navigation() {
                     <>
                         <li className="navbarItem">
                             <Link to="/create-item">Create Item</Link>
+                        </li>
+                        <li className="navbarItem">
+                            <Link to="/" className="title">
+                                Lion Leather Craft
+                            </Link>
                         </li>
 
                         <li className="navbarItem">

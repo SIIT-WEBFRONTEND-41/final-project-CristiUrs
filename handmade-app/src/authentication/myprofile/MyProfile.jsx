@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
-import { ItemsContext } from "../../ItemContext";
+import React, { useEffect, useState } from "react";
+import Footer from "../../HandMade/Footer";
 
 export default function MyProfile() {
     const [userInfo, setUserInfo] = useState({
@@ -206,7 +206,7 @@ export default function MyProfile() {
                 )}
             </form>
             <form className="updatePass" onSubmit={handleSubmitPassword}>
-                <h1 className="titleForm">Change Password</h1>
+                <h3 className="createTitle changePass">Change Password</h3>
                 <fieldset className="box mb3">
                     <input
                         className="form-control"

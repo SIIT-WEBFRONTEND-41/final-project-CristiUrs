@@ -1,18 +1,15 @@
 import CartIcon from "../Icons/CartIcon";
 import HeartIcon from "../Icons/HeartIcon";
-
-import SearchIcon from "../Icons/SearchIcon";
 import "./Wallet.css";
-
 import { useContext, useEffect, useState } from "react";
-
 import { Item } from "./Item";
 import { Link, useNavigate } from "react-router-dom";
 import { ItemsContext } from "../ItemContext";
 import { UserContext, getAccessToken } from "../UserContext";
 import { CartContext } from "../CartContext";
-import Navbar from "../navbar/Navbar";
 import logo3 from "../Image/5450a0af-9076-4e7d-9096-2a11bb88e01d.webp";
+import ArrowIcon from "../Icons/ArrowIcon";
+import logoerr from "../Image/visuals-JpTY4gUviJM-unsplash.jpg";
 
 export default function Wallet() {
     const [products, setProducts] = useState([]);
@@ -26,7 +23,6 @@ export default function Wallet() {
     const addToCart = (product) => {
         setCart([...cart, product]);
     };
-    useEffect(() => {}, [cart]);
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
@@ -84,8 +80,12 @@ export default function Wallet() {
 
     if (error) {
         return (
-            <section className="mr-px">
-                There has been a problem loading our products. Try again later.
+            <section className="err_page">
+                <p>
+                    There has been a problem loading our products. Try again
+                    later.
+                </p>
+                <img src={logoerr} alt="" className="err" />
             </section>
         );
     }
@@ -96,16 +96,16 @@ export default function Wallet() {
                 <nav className="navBar2">
                     <div className="info">
                         <Link to="/accessories">
-                            <span>Accessories</span>
+                            <span className="category">Accessories</span>
                         </Link>
                         <Link to="/bag">
-                            <span>Bags</span>
+                            <span className="category">Bags</span>
                         </Link>
                         <Link to="/cardHolder">
-                            <span>Cards Holder</span>
+                            <span className="category">Cards Holder</span>
                         </Link>
                         <Link to="/wallet">
-                            <span>Wallets</span>
+                            <span className="category">Wallets</span>
                         </Link>
                     </div>
                     <div className="search">
@@ -140,7 +140,8 @@ export default function Wallet() {
             <div className="container">
                 <img src={logo3} className="logo-img"></img>
                 <p className="descriere-text">
-                    Step into the world of LION LEATHER CRAFT!
+                    Step into the world of LION LEATHER CRAFT! <br />
+                    <ArrowIcon></ArrowIcon>
                 </p>
             </div>
 

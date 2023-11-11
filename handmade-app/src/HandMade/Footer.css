@@ -6,6 +6,7 @@
     bottom: 0;
     width: 100%;
     padding: 10px;
+    font-family: cursive;
 }
 .footer-up {
     display: flex;
@@ -30,10 +31,6 @@
     display: flex;
     text-align: center;
     justify-content: center;
-}
-.news-later {
-    display: grid;
-    place-items: center;
 }
 
 @media (max-width: 500px) {

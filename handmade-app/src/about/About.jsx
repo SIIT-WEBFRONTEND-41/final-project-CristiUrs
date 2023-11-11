@@ -1,10 +1,12 @@
 import "./About.css";
+import logo from "../Image/istockphoto-1371309559-1024x1024.jpg";
 
 export default function About() {
     return (
         <div className="about">
             <div className="about_title">
-                <h1>About</h1>
+                <img src={logo} alt="" className="logo_about" />
+                <h1 className="title_about">About</h1>
             </div>
 
             <div className="about_info">
@@ -13,9 +15,7 @@ export default function About() {
                     Bianca and Adrian dining room table. Back then it was just
                     an experiment to see if Bianca could make a simple laptop
                     sleeve. Instead of making just one, he made six or seven -
-                    each iteration got better and better. Soon others were
-                    asking Odin for other items - custom wallets, belts, and
-                    more.
+                    each iteration got better and better.
                 </p>
                 <p>
                     We often say "this was a curiosity that turned into a hobby,
@@ -28,13 +28,6 @@ export default function About() {
                     white-labeled and co-branded goods for a growing list of
                     clients and customers. We're definitely on the move. Our
                     product philosophy is to keep things simple.{" "}
-                </p>
-                <p>
-                    Our designs allude to a classic style and focus on
-                    functionality. We want our customers to feel confident that
-                    LLC's belts, wallets, and bags are durable enough to travel
-                    the world with them, all while still being perfect for
-                    everyday use.
                 </p>
             </div>
         </div>

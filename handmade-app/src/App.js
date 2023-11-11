@@ -10,7 +10,7 @@ import Register from "./authentication/register/Register";
 import Login from "./authentication/login/Login";
 import UserContextProvider from "./UserContext";
 import Wishlist from "./wishlist/Wishlist";
-import Footer from "./HandMade/Footer";
+
 import NavLogin from "./HandMade/NavLogin";
 import Bag from "./Products/bag/bag";
 
@@ -26,6 +26,7 @@ import WalletFilter from "./Products/wallet/WalletFilter";
 import Accessories from "./Products/Accessories/Accessories";
 import Privacy from "./Privacy/Privacy";
 import Refund from "./Refund/Refund";
+import Footer from "./HandMade/Footer";
 
 function App() {
     return (

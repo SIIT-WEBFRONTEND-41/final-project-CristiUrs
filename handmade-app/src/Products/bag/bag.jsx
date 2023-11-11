@@ -4,6 +4,8 @@ import { Item } from "../../HandMade/Item";
 
 import { ItemsContext } from "../../ItemContext";
 
+import { CartContext } from "../../CartContext";
+
 import "./bag.css";
 
 import img from "../../Image/alvaro-serrano-pFLNV4gkXsc-unsplash.jpg";
@@ -11,8 +13,13 @@ import img from "../../Image/alvaro-serrano-pFLNV4gkXsc-unsplash.jpg";
 export default function Bag() {
     const { wallets, setWallets } = useContext(ItemsContext);
 
+    const { cart, setCart } = useContext(CartContext);
+
+    const addToCart = (product) => {
+        setCart([...cart, product]);
+    };
+
     function bookmark(product, wishlist) {
-        console.log(product);
         product.wishlist = !wishlist;
         const productId = product.id;
 
@@ -44,6 +51,7 @@ export default function Bag() {
                             key={product.id}
                             product={product}
                             bookmark={bookmark}
+                            addToCart={addToCart}
                         ></Item>
                     ))}
             </section>

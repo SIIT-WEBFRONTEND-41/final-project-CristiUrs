@@ -2,9 +2,12 @@
     display: grid;
     place-items: center;
 }
-.list {
-    display: grid;
-    place-items: center;
+.list_shopping {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    padding: 10px;
 }
 .items {
     display: flex;
@@ -12,4 +15,19 @@
 }
 .title {
     margin: 30px;
+}
+.btn_remove {
+    background-color: #040404;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.total_price {
+    position: fixed;
+    top: 70vh;
+    right: 0vh;
+
+    display: block;
+    width: 40%;
 }

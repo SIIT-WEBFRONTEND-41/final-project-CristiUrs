@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 
 import { Item } from "../../HandMade/Item";
+import { CartContext } from "../../CartContext";
 
 import { ItemsContext } from "../../ItemContext";
 import "./Accessories.css";
@@ -8,6 +9,11 @@ import img from "../../Image/aleksandrs-karevs-f43Ubfx3ooo-unsplash.jpg";
 
 export default function Accessories() {
     const { wallets, setWallets } = useContext(ItemsContext);
+    const { cart, setCart } = useContext(CartContext);
+
+    const addToCart = (product) => {
+        setCart([...cart, product]);
+    };
 
     function bookmark(product, wishlist) {
         product.wishlist = !wishlist;
@@ -41,6 +47,7 @@ export default function Accessories() {
                             key={product.id}
                             product={product}
                             bookmark={bookmark}
+                            addToCart={addToCart}
                         ></Item>
                     ))}
             </section>

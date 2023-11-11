@@ -12,8 +12,11 @@ export default function ItemForm(props) {
     let { id } = useParams();
     const { user } = useContext(UserContext);
 
-    const { wallets } = useContext(ItemsContext);
+    const { wallets, setWallets } = useContext(ItemsContext);
     const [items, setItems] = useState(null);
+    const [showMessage, setShowMessage] = useState(false);
+
+    const bearerToken = user?.accessToken || getAccessToken();
 
     const defaultImageUrl = "https://picsum.photos/200/300";
     const defaultItem = "New item";
@@ -24,7 +27,7 @@ export default function ItemForm(props) {
     function handleSubmit(event) {
         event.preventDefault();
         const { image, name, price, colour, details } = event.target;
-        console.log(event);
+
         const updatedItem = {
             ...items,
             image: image?.value || defaultImageUrl,
@@ -32,7 +35,7 @@ export default function ItemForm(props) {
             price: price?.value || defaultPrice,
 
             colour: colour?.value || defaultColour,
-            delails: details?.value || defaultDetails,
+            details: details?.value || defaultDetails,
         };
 
         fetch(`http://localhost:3004/products/${id}`, {
@@ -40,14 +43,20 @@ export default function ItemForm(props) {
             body: JSON.stringify(updatedItem),
             headers: {
                 "content-type": "application/json",
+                Authorization: `Bearer ${bearerToken}`,
             },
         })
             .then((response) => response.json())
-            .then((dataFromServer) => setItems(dataFromServer));
-
-        console.log(updatedItem);
+            .then((data) => {
+                setItems(data);
+                setShowMessage(true);
+                setTimeout(() => {
+                    setShowMessage(false);
+                }, 2000);
+            });
 
         onSubmit(updatedItem);
+
         event.target.reset();
     }
 
@@ -68,27 +77,32 @@ export default function ItemForm(props) {
     return (
         <form onSubmit={handleSubmit} className="formItem">
             <fieldset className="mb-3 box">
-                <label htmlFor="url">URL:</label>
                 <input
                     id="url"
                     type="text"
                     name="image"
                     defaultValue={items?.image}
+                    className="form-control"
                 />
+                <label htmlFor="url" className="form-label">
+                    URL:
+                </label>
             </fieldset>
 
             <fieldset className="mb-3 box">
-                <label htmlFor="name">Name</label>
                 <input
                     id="name"
                     type="text"
                     name="name"
                     defaultValue={items?.name}
+                    className="form-control"
                 />
+                <label htmlFor="name" className="form-label">
+                    Name
+                </label>
             </fieldset>
 
             <fieldset className="mb-3 box">
-                <label htmlFor="price">Price</label>
                 <input
                     id="price"
                     type="number"
@@ -96,12 +110,19 @@ export default function ItemForm(props) {
                     min={5}
                     max={500}
                     defaultValue={items?.price}
+                    className="form-control"
                 />
+                <label htmlFor="price" className="form-label">
+                    Price
+                </label>
             </fieldset>
 
-            <fieldset className="mb-3">
-                <label htmlFor="colour">Colour</label>
-                <select id="colour" defaultValue={items?.colour}>
+            <fieldset className="mb-3 box">
+                <select
+                    id="colour"
+                    defaultValue={items?.colour}
+                    className="form-control"
+                >
                     <option value="black">black</option>
                     <option value="blue">blue</option>
                     <option value="brown">brown</option>
@@ -110,19 +131,32 @@ export default function ItemForm(props) {
                     <option value="red">red</option>
                     <option value="yellow">yellow</option>
                 </select>
+                <label htmlFor="colour" className="form-label">
+                    Colour
+                </label>
             </fieldset>
 
-            <fieldset className="mb-3">
-                <label htmlFor="details">Details</label>
+            <fieldset className="mb-3 box">
                 <input
                     id="details"
                     type="text"
                     name="details"
-                    defaultValue={item?.details}
+                    defaultValue={items?.details}
+                    className="form-control"
                 />
+                <label htmlFor="details" className="form-label">
+                    Details
+                </label>
             </fieldset>
 
-            <button className="mb-3 btn5">Update</button>
+            <button className="btn5">Update</button>
+            {showMessage && (
+                <div>
+                    <p className="infoUpdate">
+                        The product was updated successfully!
+                    </p>
+                </div>
+            )}
         </form>
     );
 }
