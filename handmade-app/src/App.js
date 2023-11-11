@@ -2,7 +2,6 @@ import "./App.css";
 import Wallet from "./HandMade/Wallet";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Navigation from "./Navigation";
-
 import CreateItem from "./create-item/Create-item";
 import React, { useState } from "react";
 import ItemContextProvider from "./ItemContext";
@@ -10,13 +9,10 @@ import Register from "./authentication/register/Register";
 import Login from "./authentication/login/Login";
 import UserContextProvider from "./UserContext";
 import Wishlist from "./wishlist/Wishlist";
-
 import NavLogin from "./HandMade/NavLogin";
 import Bag from "./Products/bag/bag";
-
 import CardHolder from "./Products/cardHolder/CardHolder";
 import About from "./about/About";
-import { Item } from "./HandMade/Item";
 import ItemInfo from "./item-info/ItemInfo";
 import ShoppingCart from "./shopping-cart/ShoppingCart";
 import CartContextProvider from "./CartContext";
@@ -27,6 +23,7 @@ import Accessories from "./Products/Accessories/Accessories";
 import Privacy from "./Privacy/Privacy";
 import Refund from "./Refund/Refund";
 import Footer from "./HandMade/Footer";
+import logoerr from "./Image/visuals-JpTY4gUviJM-unsplash.jpg";
 
 function App() {
     return (
@@ -101,7 +98,18 @@ function App() {
                             ></Route>
                             <Route
                                 path="*"
-                                element={<div>Page not found 404</div>}
+                                element={
+                                    <div>
+                                        <p className="not_found">
+                                            Page not found
+                                        </p>
+                                        <img
+                                            src={logoerr}
+                                            alt=""
+                                            className="err"
+                                        />
+                                    </div>
+                                }
                             ></Route>
                         </Routes>
                         <Footer />
