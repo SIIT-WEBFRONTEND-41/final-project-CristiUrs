@@ -160,6 +160,14 @@
       "lastName": "Cristian",
       "address": "buc sec 4",
       "id": 25
+    },
+    {
+      "email": "pascu@gmail.com",
+      "password": "$2a$10$5vC6IAbWc.Rln7t.OD4XXOJNllNgMpEEntkSUvxQG39ihNOBIhMkW",
+      "firstName": "Pascu",
+      "lastName": "Daniel",
+      "address": "Timisoara",
+      "id": 26
     }
   ],
   "products": [
@@ -572,14 +580,6 @@
       "colour": "brown",
       "details": "Cart holder brown",
       "id": 54
-    },
-    {
-      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937776/Images/vy0at7godpda112rwf78.jpg",
-      "name": "Big",
-      "price": "20",
-      "colour": "red",
-      "details": "red big",
-      "id": 55
     }
   ]
 }

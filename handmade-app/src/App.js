@@ -40,6 +40,19 @@ function App() {
                                 element={<ItemInfo></ItemInfo>}
                             ></Route>
                             <Route
+                                path="accessories/products/:id"
+                                element={<ItemInfo></ItemInfo>}
+                            ></Route>
+                            <Route
+                                path="bag/products/:id"
+                                element={<ItemInfo></ItemInfo>}
+                            ></Route>
+
+                            <Route
+                                path="cardHolder/products/:id"
+                                element={<ItemInfo></ItemInfo>}
+                            ></Route>
+                            <Route
                                 path="users/:lastName"
                                 element={<NavLogin></NavLogin>}
                             ></Route>
@@ -58,6 +71,10 @@ function App() {
                             <Route
                                 path="/wallet"
                                 element={<WalletFilter></WalletFilter>}
+                            ></Route>
+                            <Route
+                                path="wallet/products/:id"
+                                element={<ItemInfo></ItemInfo>}
                             ></Route>
                             <Route path="/bag" element={<Bag></Bag>}></Route>
                             <Route
