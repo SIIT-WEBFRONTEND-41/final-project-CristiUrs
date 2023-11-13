@@ -74,3 +74,12 @@
 .svg {
     height: 40px;
 }
+.youtubeSvg {
+    fill: red;
+}
+.facebookSvg {
+    fill: blue;
+}
+.instaSvg {
+    fill: orange;
+}

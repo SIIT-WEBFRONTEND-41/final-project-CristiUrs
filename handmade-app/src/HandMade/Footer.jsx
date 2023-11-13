@@ -18,6 +18,7 @@ export default function Footer() {
                         <ul className="social">
                             <li>
                                 <a
+                                    className="facebookSvg"
                                     href="https://www.facebook.com/lionleathercraftuk"
                                     target="_blank"
                                 >
@@ -26,6 +27,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
+                                    className="instaSvg"
                                     href="https://www.instagram.com/lionleathercraftuk/"
                                     target="_blank"
                                 >
@@ -34,6 +36,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
+                                    className="youtubeSvg"
                                     href="https://www.youtube.com/@LeathrCrafts"
                                     target="_blank"
                                 >

@@ -168,6 +168,22 @@
       "lastName": "Daniel",
       "address": "Timisoara",
       "id": 26
+    },
+    {
+      "email": "adi@gmail.com",
+      "password": "$2a$10$YvY0GV8BCYfwO6WZddHPjuvXh5FIOfuMzlOELfPblIJDF0h8V6gE2",
+      "firstName": "Cristi",
+      "lastName": "Adrian",
+      "address": "Buc sec.1",
+      "id": 27
+    },
+    {
+      "email": "adrian@gmail.com",
+      "password": "$2a$10$ycWKnKaUgxbB3TuJ8FiQpu8MuAqRDqX02nvPEs6Jn4C9jcrDI2h06",
+      "firstName": "Adi25",
+      "lastName": "Cristiannn",
+      "address": "Buc sec 557657",
+      "id": 28
     }
   ],
   "products": [
@@ -233,10 +249,10 @@
     {
       "id": 12,
       "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937787/Images/dnl4kbwviyjpyqmmn6x6.jpg",
-      "name": "Bag Zip5",
+      "name": "Bag Zip",
       "price": "100",
       "wishlist": false,
-      "colour": "light-brown",
+      "colour": "black",
       "details": "Meet the Zip bag, our new brown leather zipped backpack, handmade here in the UK. ",
       "delails": "Meet the Zip bag, our new brown leather zipped backpack, handmade here in the UK. "
     },

@@ -73,9 +73,7 @@ export default function ItemInfo() {
                             </p>
                         </div>
                         <div>
-                            <p>
-                                Color:<span>{item?.colour}</span>
-                            </p>
+                            <p>Color: {item?.colour}</p>
                         </div>
                         <div className="details">
                             <h5 className="title5">Detailed Description</h5>
