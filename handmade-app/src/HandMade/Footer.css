@@ -1,12 +1,10 @@
 .footer {
     background-color: antiquewhite;
-    padding: 20px;
-
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 10px;
-    font-family: cursive;
+    font-family: serif;
 }
 .footer-up {
     display: flex;

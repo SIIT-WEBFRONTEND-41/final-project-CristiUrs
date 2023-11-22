@@ -3,6 +3,9 @@
     margin: 0 auto;
     letter-spacing: 0.2em;
 }
+* {
+    color: black;
+}
 .createAccount {
     display: grid;
     place-items: center;

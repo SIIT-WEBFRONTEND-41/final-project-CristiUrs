@@ -1,6 +1,5 @@
 .wallet {
     background-color: #efefef;
-    border-radius: 10px;
 }
 
 .image {
@@ -10,13 +9,15 @@
 }
 .btn1 {
     border: none;
-    padding: 8px 8px;
+    padding: 5px 10px;
     font-weight: bold;
     outline: none;
-    background-color: white;
+    background-color: black;
+    color: antiquewhite;
+    margin-bottom: 3px;
 }
 .btn1:hover {
-    background-color: black;
+    background-color: red;
     color: white;
 }
 .wallet {
@@ -26,6 +27,7 @@
 }
 .wallet__name {
     display: contents;
+    font-weight: bold;
 }
 .cartItem {
     position: relative;

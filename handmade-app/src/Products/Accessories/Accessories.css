@@ -1,8 +1,10 @@
 .wallet-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 65px;
     justify-content: space-evenly;
+    margin-left: 65px;
+    margin-right: 65px;
 }
 .title {
     text-align: center;
@@ -12,7 +14,7 @@
 }
 .titleCard {
     text-align: center;
-    font-family: monospace;
+    font-family: serif;
     position: absolute;
     top: 7%;
     left: 50%;

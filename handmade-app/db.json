@@ -181,9 +181,25 @@
       "email": "adrian@gmail.com",
       "password": "$2a$10$ycWKnKaUgxbB3TuJ8FiQpu8MuAqRDqX02nvPEs6Jn4C9jcrDI2h06",
       "firstName": "Adi25",
-      "lastName": "Cristiannn",
+      "lastName": "Cristian",
       "address": "Buc sec 557657",
       "id": 28
+    },
+    {
+      "email": "sit41@gmail.com",
+      "password": "$2a$10$jNEdUkxPV23pX8BYJbLyo.tyoFjap.JYgydAnAYVyB4pR6mtatm16",
+      "firstName": "cristisdf",
+      "lastName": "ursulescusdf",
+      "address": "buc",
+      "id": 29
+    },
+    {
+      "email": "ded@gmail.com",
+      "password": "$2a$10$V.F0dTI75y3EK5mkqucFXOrVK8w6aVZwoex36FM0elyvgYfv7FH0S",
+      "firstName": "crisgfdgd",
+      "lastName": "cri",
+      "address": "buc",
+      "id": 30
     }
   ],
   "products": [
@@ -196,16 +212,6 @@
       "colour": "black",
       "details": "The Tote is the most versatile leather bag you can own. Its unisex design makes it both a stylish women's leather handbag and modern men's leather tote.",
       "delails": "The Tote is the most versatile leather bag you can own. Its unisex design makes it both a stylish women's leather handbag and modern men's leather tote."
-    },
-    {
-      "id": 7,
-      "image": "https://res.cloudinary.com/dcict1aha/image/upload/v1698937785/Images/g5eoerf0pjkbsjqmhhdx.jpg",
-      "name": "Bag Rolltop",
-      "price": "60",
-      "wishlist": false,
-      "colour": "black",
-      "details": "The Rolltop is the most versatile leather bag you can own.",
-      "delails": "The Rolltop is the most versatile leather bag you can own."
     },
     {
       "id": 8,
@@ -596,6 +602,22 @@
       "colour": "brown",
       "details": "Cart holder brown",
       "id": 54
+    },
+    {
+      "image": "https://picsum.photos/200/300",
+      "name": "dfgdfg",
+      "price": "24",
+      "colour": "brown",
+      "details": "sdfsd",
+      "id": 55
+    },
+    {
+      "image": "https://picsum.photos/200/300",
+      "name": "fgdfg",
+      "price": "25",
+      "colour": "brown",
+      "details": "dxgxg",
+      "id": 56
     }
   ]
 }

@@ -1,11 +1,3 @@
-/* .btn5 {
-    background-color: black;
-    width: 670px;
-    height: 55px;
-
-    transition: background-color 0.3s ease;
-} */
-
 .btn:hover {
     background-color: white;
     color: black;

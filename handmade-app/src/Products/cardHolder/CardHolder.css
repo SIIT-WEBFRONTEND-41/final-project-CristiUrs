@@ -1,8 +1,10 @@
 .wallet-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 65px;
     justify-content: space-evenly;
+    margin-left: 65px;
+    margin-right: 65px;
 }
 .titleCard {
     text-align: center;

@@ -6,9 +6,11 @@
 .wallet-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 65px;
     justify-content: space-evenly;
     font-family: cursive;
+    margin-left: 65px;
+    margin-right: 65px;
 }
 
 .input1 {
@@ -16,8 +18,8 @@
     margin: 0 10px;
     background-color: antiquewhite;
     text-align: center;
-    border: 2px solid #542188;
-    font-family: cursive;
+    border: 2px solid black;
+    font-family: serif;
 }
 .wallet__card {
     position: relative;
@@ -45,7 +47,7 @@
 
 .info {
     display: flex;
-    font-family: cursive;
+    font-family: serif;
 }
 
 a {
@@ -67,7 +69,7 @@ a {
 .userLogin {
     text-align: center;
     font-size: 19px;
-    font-family: monospace;
+    font-family: serif;
     margin-bottom: 5px;
 }
 
@@ -168,7 +170,7 @@ a {
 .descriere-text {
     position: absolute;
     top: 90%;
-    font-family: cursive;
+    font-family: serif;
     left: 39%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
